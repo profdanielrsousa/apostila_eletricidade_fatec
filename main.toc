@@ -1,0 +1,243 @@
+\babel@toc {portuguese}{}\relax 
+\contentsline {chapter}{\numberline {1}A Natureza da Eletricidade}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introdução}{13}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Formas de Conversão de Energia}{14}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Tipos de Eletricidade}{14}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Estrutura do Átomo}{15}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Condutores e Isolantes}{15}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Conceitos Fundamentais}{15}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Princípios de Atração e Repulsão}{15}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Princípio da Conservação das Cargas Elétricas}{16}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Processos de Eletrização}{16}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}Exemplos Práticos de Eletrização}{16}{subsection.1.9.1}%
+\contentsline {subsection}{\numberline {1.9.2}Aplicações e Ocorrências da Eletricidade Estática}{17}{subsection.1.9.2}%
+\contentsline {section}{\numberline {1.10}Recapitulando}{17}{section.1.10}%
+\contentsline {section}{\numberline {1.11}Atividades Sugeridas}{17}{section.1.11}%
+\contentsline {section}{\numberline {1.12}Material Complementar}{18}{section.1.12}%
+\contentsline {chapter}{\numberline {2}Lei de Ohm e Corrente Elétrica}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introdução}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Eletrodinâmica: O Início}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Geradores de Corrente}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Sentido da Corrente Elétrica}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Materiais Condutores de Eletricidade}{20}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Definição de Corrente Elétrica}{20}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Medição de Corrente e Tensão Elétrica}{21}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Resistência Elétrica}{21}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Primeira Lei de Ohm}{21}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Segunda Lei de Ohm}{22}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Tabela de Resistividade de Materiais}{22}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}Influência da Temperatura}{22}{subsection.2.10.2}%
+\contentsline {section}{\numberline {2.11}Exercícios Resolvidos}{23}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Notação Científica e Unidades}{24}{section.2.12}%
+\contentsline {section}{\numberline {2.13}Considerações Finais}{24}{section.2.13}%
+\contentsline {section}{\numberline {2.14}Material Complementar}{25}{section.2.14}%
+\contentsline {chapter}{\numberline {3}Associação de Resistores}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Revisão: Leis de Ohm}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Associação de Resistores}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Associação de Resistores em Série}{28}{subsection.3.2.1}%
+\contentsline {subsubsection}{Características:}{28}{section*.14}%
+\contentsline {subsubsection}{Resistência Equivalente em Série}{28}{section*.15}%
+\contentsline {subsubsection}{Aplicação Prática}{29}{section*.16}%
+\contentsline {subsubsection}{Exemplo Resolvido: Queda de Tensão em Condutores}{29}{section*.17}%
+\contentsline {subsection}{\numberline {3.2.2}Associação de Resistores em Paralelo}{29}{subsection.3.2.2}%
+\contentsline {subsubsection}{Características:}{29}{section*.18}%
+\contentsline {subsubsection}{Resistência Equivalente em Paralelo}{30}{section*.19}%
+\contentsline {subsubsection}{Casos Especiais}{30}{section*.20}%
+\contentsline {subsubsection}{Importante:}{30}{section*.21}%
+\contentsline {subsubsection}{Aplicação: Instalações Elétricas}{30}{section*.22}%
+\contentsline {subsection}{\numberline {3.2.3}Observações Práticas}{30}{subsection.3.2.3}%
+\contentsline {subsubsection}{Queda de Tensão em Condutores}{30}{section*.23}%
+\contentsline {subsubsection}{Instalações Automotivas}{31}{section*.24}%
+\contentsline {subsection}{\numberline {3.2.4}Comparativo: Série vs. Paralelo}{31}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Considerações Finais}{31}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Exercícios sobre Associação de Resistores}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Exercícios sobre Associação de Resistores}{33}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Revisão: Associação em Série}{33}{subsection.4.1.1}%
+\contentsline {subsubsection}{Exemplo 1}{33}{section*.25}%
+\contentsline {subsubsection}{Exemplo 2}{34}{section*.26}%
+\contentsline {subsubsection}{Exemplo 3: Conversão de Unidades}{34}{section*.27}%
+\contentsline {subsubsection}{Exemplo 4}{34}{section*.28}%
+\contentsline {subsubsection}{Exemplo 5}{34}{section*.29}%
+\contentsline {subsubsection}{Exemplo 6: Megaohms e kilohms}{34}{section*.30}%
+\contentsline {subsubsection}{Nota:}{34}{section*.31}%
+\contentsline {subsubsection}{Exemplo 7}{34}{section*.32}%
+\contentsline {subsubsection}{Exemplo 8: Resistores em zigue-zague}{35}{section*.33}%
+\contentsline {subsection}{\numberline {4.1.2}Revisão: Associação em Paralelo}{35}{subsection.4.1.2}%
+\contentsline {subsubsection}{Casos Particulares}{35}{section*.34}%
+\contentsline {subsubsection}{Exemplo 1: Dois resistores diferentes}{35}{section*.35}%
+\contentsline {subsubsection}{Exemplo 2: Mesmo problema usando produto pela soma}{36}{section*.36}%
+\contentsline {subsubsection}{Exemplo 3: Resistores de 25\,\Omega e 30\,\Omega }{36}{section*.37}%
+\contentsline {subsubsection}{Exemplo 4: Três resistores distintos}{36}{section*.38}%
+\contentsline {subsubsection}{Exemplo 5: Três resistores iguais}{36}{section*.39}%
+\contentsline {subsubsection}{Exemplo 6: Diversos valores}{36}{section*.40}%
+\contentsline {subsection}{\numberline {4.1.3}Associação Mista de Resistores}{36}{subsection.4.1.3}%
+\contentsline {subsubsection}{Estratégia de Resolução}{37}{section*.41}%
+\contentsline {subsubsection}{Exemplo 1: Paralelo seguido de série}{37}{section*.42}%
+\contentsline {subsubsection}{Exemplo 2: Série seguida de paralelo}{37}{section*.43}%
+\contentsline {subsubsection}{Exemplo 3: Dois paralelos seguidos de série}{37}{section*.44}%
+\contentsline {subsection}{\numberline {4.1.4}Dicas Finais e Encerramento}{38}{subsection.4.1.4}%
+\contentsline {chapter}{\numberline {5}Verificação Experimental da Lei de Ohm}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Verificação Experimental da Lei de Ohm}{39}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Introdução}{39}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Resistores: Tipos e Aplicações}{39}{subsection.5.1.2}%
+\contentsline {subsubsection}{Tipos de Resistor:}{40}{section*.45}%
+\contentsline {subsection}{\numberline {5.1.3}Código de Cores dos Resistores}{40}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Protoboard: Montagem e Estrutura}{40}{subsection.5.1.4}%
+\contentsline {subsubsection}{Estrutura interna:}{41}{section*.46}%
+\contentsline {subsection}{\numberline {5.1.5}Utilização do Multímetro Digital}{41}{subsection.5.1.5}%
+\contentsline {subsubsection}{Atenção na Medição de Corrente:}{41}{section*.47}%
+\contentsline {subsection}{\numberline {5.1.6}Montagem do Circuito}{41}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Primeira Etapa: Resistor de 330\,$\Omega $}{41}{subsection.5.1.7}%
+\contentsline {subsubsection}{Medições realizadas:}{42}{section*.48}%
+\contentsline {subsubsection}{Análise dos Resultados:}{42}{section*.49}%
+\contentsline {subsection}{\numberline {5.1.8}Segunda Etapa: Resistor de 1\,k$\Omega $}{42}{subsection.5.1.8}%
+\contentsline {subsubsection}{Medições realizadas:}{42}{section*.50}%
+\contentsline {subsubsection}{Análise dos Resultados:}{42}{section*.51}%
+\contentsline {subsection}{\numberline {5.1.9}Terceira Etapa: Resistor de 10\,k$\Omega $}{43}{subsection.5.1.9}%
+\contentsline {subsubsection}{Medições realizadas:}{43}{section*.52}%
+\contentsline {subsubsection}{Análise dos Resultados:}{43}{section*.53}%
+\contentsline {subsection}{\numberline {5.1.10}Comparação com Medição Direta no Multímetro}{43}{subsection.5.1.10}%
+\contentsline {subsection}{\numberline {5.1.11}Conclusão}{43}{subsection.5.1.11}%
+\contentsline {chapter}{\numberline {6}Geradores e Receptores Elétricos}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introdução}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}O Que São Geradores Elétricos?}{46}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Exemplos de Geração de Energia}{46}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Geradores de Tensão e Corrente}{46}{subsection.6.2.2}%
+\contentsline {subsubsection}{Na Prática:}{46}{section*.55}%
+\contentsline {subsection}{\numberline {6.2.3}Modelo Real de Gerador de Tensão Contínua}{47}{subsection.6.2.3}%
+\contentsline {subsubsection}{Curva Característica do Gerador}{47}{section*.56}%
+\contentsline {subsection}{\numberline {6.2.4}Potência em Geradores Reais}{47}{subsection.6.2.4}%
+\contentsline {subsubsection}{Equações Fundamentais}{47}{section*.57}%
+\contentsline {subsection}{\numberline {6.2.5}Rendimento do Gerador}{47}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Condição de Máxima Transferência de Potência}{48}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.7}Exemplo Resolvido}{48}{subsection.6.2.7}%
+\contentsline {section}{\numberline {6.3}Receptores Elétricos}{49}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Modelo Real do Receptor}{49}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Potência nos Receptores}{49}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Exemplo Resolvido}{49}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Observação Importante:}{50}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Receptor em Corrente Alternada (CA)}{50}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.6}Associação de Geradores}{50}{subsection.6.3.6}%
+\contentsline {subsubsection}{a) Associação em Série}{50}{section*.58}%
+\contentsline {subsubsection}{b) Associação em Paralelo}{50}{section*.59}%
+\contentsline {subsubsection}{Exemplo: Corrente Circulante}{51}{section*.60}%
+\contentsline {subsection}{\numberline {6.3.7}Considerações Finais}{51}{subsection.6.3.7}%
+\contentsline {section}{\numberline {6.4}Material Complementar}{51}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Leis de Kirchhoff}{53}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introdução às Leis de Kirchhoff}{53}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Definições Importantes}{54}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Exemplo Prático}{54}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Primeira Lei de Kirchhoff – Lei dos Nós}{54}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Forma Algébrica}{54}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Exemplo:}{55}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Segunda Lei de Kirchhoff – Lei das Malhas}{55}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Regras para os Sinais}{55}{subsection.7.4.1}%
+\contentsline {section}{\numberline {7.5}Exemplo de Aplicação da 2ª Lei de Kirchhoff}{55}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Verificação:}{56}{subsection.7.5.1}%
+\contentsline {section}{\numberline {7.6}Malhas com Mais de Uma Fonte}{56}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Análise de Circuito com Duas Malhas}{56}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Equações das Malhas}{56}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.2}Resolvendo o Sistema de Equações}{57}{subsection.7.7.2}%
+\contentsline {subsection}{\numberline {7.7.3}Interpretação}{57}{subsection.7.7.3}%
+\contentsline {section}{\numberline {7.8}Dica de Resolução}{57}{section.7.8}%
+\contentsline {section}{\numberline {7.9}Circuito com Duas Fontes em Malhas Diferentes}{58}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Equações das Malhas}{58}{subsection.7.9.1}%
+\contentsline {subsection}{\numberline {7.9.2}Resolvendo o Sistema}{58}{subsection.7.9.2}%
+\contentsline {subsection}{\numberline {7.9.3}Verificação}{58}{subsection.7.9.3}%
+\contentsline {section}{\numberline {7.10}Considerações Finais}{59}{section.7.10}%
+\contentsline {chapter}{\numberline {8}Aplicações das Leis de Kirchhoff}{61}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introdução}{61}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Exercício 1 – Duas Malhas com Fontes Diferentes}{61}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Descrição do Circuito}{61}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}1ª Equação – Lei dos Nós (1ª Lei de Kirchhoff)}{62}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}2ª Equação – Malha 1 (2ª Lei de Kirchhoff)}{62}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}3ª Equação – Malha 2}{62}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Simplificação das Equações}{62}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Resolução do Sistema (Exercício 1)}{62}{subsection.8.2.6}%
+\contentsline {subsubsection}{Passo 1 – Isolar $I_1$ na Equação (2')}{62}{section*.66}%
+\contentsline {subsubsection}{Passo 2 – Isolar $I_3$ na Equação (3')}{63}{section*.68}%
+\contentsline {subsubsection}{Passo 3 – Substituir (4) e (5) na Equação dos Nós (1)}{63}{section*.70}%
+\contentsline {subsubsection}{Passo 4 – Substituir $I_2$ para encontrar $I_1$ e $I_3$}{63}{section*.71}%
+\contentsline {subsection}{\numberline {8.2.7}Interpretação dos Resultados}{63}{subsection.8.2.7}%
+\contentsline {subsection}{\numberline {8.2.8}Verificação – Quedas de Tensão}{63}{subsection.8.2.8}%
+\contentsline {section}{\numberline {8.3}Exercício 2 – Duas Fontes e Três Malhas com Correntes Interligadas}{64}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Descrição do Circuito}{64}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Equação da Malha 1}{64}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Equação da Malha 2}{64}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Lei dos Nós}{64}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}Dividindo todas as equações por 5}{64}{subsection.8.3.5}%
+\contentsline {subsection}{\numberline {8.3.6}Resolução do Sistema (Exercício 2)}{64}{subsection.8.3.6}%
+\contentsline {subsubsection}{Passo 1 – Substituir $I_1$ e $I_2$ na Equação dos Nós (3)}{64}{section*.77}%
+\contentsline {subsubsection}{Passo 2 – Substituir $I_3$ para encontrar $I_1$ e $I_2$}{65}{section*.78}%
+\contentsline {subsection}{\numberline {8.3.7}Interpretação dos Resultados}{65}{subsection.8.3.7}%
+\contentsline {subsection}{\numberline {8.3.8}Verificação – Quedas de Tensão}{65}{subsection.8.3.8}%
+\contentsline {section}{\numberline {8.4}Considerações Finais}{65}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Instrumentação Elétrica e Eletrônica}{67}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conceito de Medição}{67}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Tipos de Erros de Medição}{67}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Exatidão e Precisão}{68}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Instrumento de Medição}{68}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Classificação dos Instrumentos}{68}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Por grandeza medida}{68}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Por tipo de indicação}{68}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}Por capacidade de armazenamento}{68}{subsection.9.5.3}%
+\contentsline {subsection}{\numberline {9.5.4}Por finalidade}{68}{subsection.9.5.4}%
+\contentsline {section}{\numberline {9.6}Instrumentos Analógicos}{69}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}Princípio de Funcionamento}{69}{subsection.9.6.1}%
+\contentsline {subsection}{\numberline {9.6.2}Escalas e Fundo de Escala}{69}{subsection.9.6.2}%
+\contentsline {subsection}{\numberline {9.6.3}Ajuste de Zero em Ohmímetros}{69}{subsection.9.6.3}%
+\contentsline {section}{\numberline {9.7}Instrumentos Digitais}{69}{section.9.7}%
+\contentsline {subsection}{\numberline {9.7.1}Arquitetura Básica}{69}{subsection.9.7.1}%
+\contentsline {subsection}{\numberline {9.7.2}Displays LED vs.\ LCD}{69}{subsection.9.7.2}%
+\contentsline {subsection}{\numberline {9.7.3}Resolução e Dígitos}{70}{subsection.9.7.3}%
+\contentsline {section}{\numberline {9.8}Exatidão (Classe) e Segurança}{70}{section.9.8}%
+\contentsline {subsection}{\numberline {9.8.1}Classe de Exatidão}{70}{subsection.9.8.1}%
+\contentsline {subsection}{\numberline {9.8.2}Categoria de Sobretensão (CAT)}{70}{subsection.9.8.2}%
+\contentsline {section}{\numberline {9.9}True\,RMS vs.\ Medição de Pico}{70}{section.9.9}%
+\contentsline {section}{\numberline {9.10}Resumo}{70}{section.9.10}%
+\contentsline {section}{\numberline {9.11}Exercícios Propostos}{71}{section.9.11}%
+\contentsline {chapter}{\numberline {10}Números Complexos para Análise de Circuitos em Corrente Alternada}{73}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Revisão dos Conjuntos Numéricos}{73}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Forma Retangular}{74}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Forma Polar}{74}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Conversões}{74}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Retangular \(\rightarrow \) Polar}{74}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Polar \(\rightarrow \) Retangular}{74}{subsection.10.4.2}%
+\contentsline {section}{\numberline {10.5}Propriedades Fundamentais}{74}{section.10.5}%
+\contentsline {paragraph}{Conjugado:}{74}{section*.79}%
+\contentsline {paragraph}{Inverso:}{74}{section*.80}%
+\contentsline {section}{\numberline {10.6}Operações com Números Complexos}{75}{section.10.6}%
+\contentsline {subsection}{\numberline {10.6.1}Adição e Subtração (forma retangular)}{75}{subsection.10.6.1}%
+\contentsline {subsection}{\numberline {10.6.2}Multiplicação (forma polar)}{75}{subsection.10.6.2}%
+\contentsline {subsection}{\numberline {10.6.3}Divisão (forma polar)}{75}{subsection.10.6.3}%
+\contentsline {subsection}{\numberline {10.6.4}Potenciação (fórmula de De Moivre)}{75}{subsection.10.6.4}%
+\contentsline {paragraph}{Produto com o Conjugado:}{75}{section*.81}%
+\contentsline {section}{\numberline {10.7}Importância em Circuitos CA}{75}{section.10.7}%
+\contentsline {section}{\numberline {10.8}Exercícios Propostos}{75}{section.10.8}%
+\contentsline {chapter}{\numberline {11}Corrente Alternada e Indução Eletromagnética}{77}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Sinais Periódicos e Corrente Alternada}{77}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Conceito de Corrente Alternada}{78}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Indução Eletromagnética: Leis de Faraday e Lenz}{78}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Condições para a Geração de Corrente Induzida}{78}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Regra da Mão Direita}{79}{subsection.11.3.2}%
+\contentsline {section}{\numberline {11.4}Geração Elementar de Corrente Alternada}{79}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Análise por Intervalos}{79}{subsection.11.4.1}%
+\contentsline {section}{\numberline {11.5}Forma de Onda Senoidal}{79}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}Características}{79}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}Conversão Grau-Radiano}{79}{subsection.11.5.2}%
+\contentsline {section}{\numberline {11.6}Valor Eficaz ou RMS}{80}{section.11.6}%
+\contentsline {subsection}{\numberline {11.6.1}Definição}{80}{subsection.11.6.1}%
+\contentsline {subsection}{\numberline {11.6.2}Para formas senoidais puras:}{80}{subsection.11.6.2}%
+\contentsline {subsection}{\numberline {11.6.3}Instrumentos True RMS}{80}{subsection.11.6.3}%
+\contentsline {section}{\numberline {11.7}Defasagem Angular}{80}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}Conceito}{80}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}Exemplo com Corrida}{80}{subsection.11.7.2}%
+\contentsline {subsection}{\numberline {11.7.3}Equações com Defasagem}{80}{subsection.11.7.3}%
+\contentsline {section}{\numberline {11.8}Valor Instantâneo da Grandeza}{81}{section.11.8}%
+\contentsline {subsection}{\numberline {11.8.1}Unidades}{81}{subsection.11.8.1}%
+\contentsline {subsection}{\numberline {11.8.2}Conversão}{81}{subsection.11.8.2}%
+\contentsline {section}{\numberline {11.9}Exemplo Resolvido}{81}{section.11.9}%
+\contentsline {section}{\numberline {11.10}Resumo}{81}{section.11.10}%
+\contentsline {chapter}{\textcolor {ocre}{Bibliografia}}{83}{chapter*.82}%
+\contentsline {section}{Livros}{83}{section*.83}%
+\contentsfinish 

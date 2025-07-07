@@ -1,0 +1,171 @@
+% Título do capítulo
+\capitulo{Instrumentação Elétrica e Eletrônica}\label{cap9}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+
+\begin{itemize}
+  \item Compreender os conceitos fundamentais de medição e instrumentação.
+  \item Identificar os principais tipos de erros em medições elétricas.
+  \item Distinguir os conceitos de exatidão e precisão.
+  \item Conhecer os componentes e o funcionamento dos instrumentos analógicos e digitais.
+  \item Classificar os instrumentos segundo suas aplicações e características construtivas.
+\end{itemize}
+}
+
+%\secao{Geradores e Receptores Elétricos}
+%\index{seção}
+
+\section{Conceito de Medição}
+Medir é estabelecer uma relação entre uma grandeza e outra da mesma espécie, geralmente comparando com um padrão. Em medidas elétricas, como tensão, corrente, resistência e potência, utilizamos instrumentos específicos, pois tais grandezas não são tangíveis.
+
+O \textbf{padrão de medição} deve ter:
+\begin{itemize}
+  \item \textbf{Estabilidade:} não pode se alterar com o tempo ou com variações ambientais.
+  \item \textbf{Reprodutibilidade:} deve ser possível reproduzir fielmente seus valores.
+\end{itemize}
+
+\section{Tipos de Erros de Medição}
+\begin{enumerate}
+  \item \textbf{Erros grosseiros:} causados por falha humana, como leitura errada, má ligação ou paralaxe.
+  \item \textbf{Erros sistemáticos:} oriundos do instrumento ou método de medição.
+    \begin{itemize}
+      \item Instrumentais: desgaste, mau contato, oxidação.
+      \item Ambientais: temperatura, umidade, pressão inadequadas.
+    \end{itemize}
+  \item \textbf{Erros aleatórios:} imprevisíveis, como ruídos elétricos, interferência de rádio, etc.
+\end{enumerate}
+
+\section{Exatidão e Precisão}
+Apesar de usadas como sinônimos, possuem significados distintos:
+\begin{itemize}
+  \item \textbf{Exatidão:} proximidade do valor medido em relação ao valor real.
+  \item \textbf{Precisão:} repetibilidade dos valores medidos.
+\end{itemize}
+
+\section{Instrumento de Medição}
+Dispositivo que converte uma grandeza em uma informação legível. Seus componentes principais são:
+\begin{itemize}
+  \item \textbf{Sensor:} capta a grandeza de interesse.
+  \item \textbf{Transdutor:} converte a grandeza em outra forma (geralmente elétrica).
+  \item \textbf{Indicador:} apresenta o valor final medido.
+\end{itemize}
+
+\section{Classificação dos Instrumentos}
+\subsection{Por grandeza medida}
+Amperímetro (corrente), voltímetro (tensão), wattímetro (potência), ohmímetro (resistência), capacímetro (capacitância), frequencímetro (frequência).
+
+\subsection{Por tipo de indicação}
+\begin{itemize}
+  \item \textbf{Analógicos:} ponteiro sobre escala.
+  \item \textbf{Digitais:} leitura direta em display.
+\end{itemize}
+
+\subsection{Por capacidade de armazenamento}
+\begin{itemize}
+  \item \textbf{Indicadores:} leitura instantânea.
+  \item \textbf{Registradores:} armazenam leituras ao longo do tempo.
+  \item \textbf{Totalizadores:} acumulam valores (ex: medidor de kWh).
+\end{itemize}
+
+\subsection{Por finalidade}
+\begin{itemize}
+  \item \textbf{Laboratoriais:} alta exatidão e precisão.
+  \item \textbf{Industriais:} robustos e confiáveis, mesmo sob condições adversas.
+\end{itemize}
+% --- continua do arquivo anterior -------------------------
+\section{Instrumentos Analógicos}
+
+\subsection{Princípio de Funcionamento}
+Os indicadores de ponteiro utilizam um \emph{galvanômetro} — essencialmente um mili‑ ou micro‑amperímetro — combinado a circuitos de condicionamento para medir diferentes grandezas. Os principais arranjos construtivos são:
+
+\begin{description}
+  \item[Bobina fixa\,/\,ferro móvel:] o campo magnético da bobina atrai uma peça ferromagnética móvel, deslocando o ponteiro.
+  \item[Bobina móvel:] a bobina é montada no eixo; a interação entre seu campo e o de um ímã permanente produz o torque de deflexão.
+\end{description}
+
+\subsection{Escalas e Fundo de Escala}
+A escala determina o valor mínimo e máximo que pode ser lido. Cuidados principais:
+
+\begin{itemize}
+  \item \textbf{Fundo de escala (F.S.):} valor máximo permitido; excedê‑lo pode danificar o instrumento.
+  \item \textbf{Posição do zero:} à direita, central, deslocado ou suprimido.
+  \item \textbf{Linearidade:} escalas podem ser homogêneas (lineares) ou heterogêneas (não lineares).
+  \item \textbf{Paralaxe:} evite‑a observando o ponteiro exatamente sobre sua imagem refletida no espelho da escala.
+\end{itemize}
+
+\subsection{Ajuste de Zero em Ohmímetros}
+Antes de medir resistência, curto‑circuitam‑se as pontas de prova e ajusta‑se o potenciômetro de \emph{ZERO OHM} até que o ponteiro coincida com a marca ``0 $\Omega$''.
+
+\section{Instrumentos Digitais}
+
+\subsection{Arquitetura Básica}
+Compostos por:
+\begin{enumerate}
+  \item Circuito de condicionamento (converte a grandeza em tensão contínua proporcional).
+  \item Conversor Analógico–Digital (ADC), muitas vezes do tipo aproximação sucessiva, flash ou $\Delta\Sigma$.
+  \item Microcontrolador ou lógica de processamento.
+  \item Display (\textbf{LED} ou \textbf{LCD}).
+\end{enumerate}
+
+\subsection{Displays LED vs.\ LCD}
+\begin{itemize}
+  \item \textbf{LED:} leitura em qualquer ângulo, visível à distância, tolera baixa luminosidade; maior consumo.
+  \item \textbf{LCD:} baixo consumo, excelente sob luz solar; necessita \emph{back‑light} em pouca luz; resposta pior sob baixas temperaturas.
+\end{itemize}
+
+\subsection{Resolução e Dígitos}
+A resolução relaciona‑se ao número de dígitos \emph{inteiros} mais um dígito ``meio'' (0 ou 1):
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Instrumento} & \textbf{Contagem Máx.} & \textbf{Exemplo de leitura} \\
+\midrule
+3½ dígitos & 1\,999 & \verb|199.9| \\
+4½ dígitos & 19\,999 & \verb|199.99| \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Exatidão (Classe) e Segurança}
+
+\subsection{Classe de Exatidão}
+Expressa o erro percentual relativo ao F.S.  
+Ex.: classe 0,5 em um amperímetro de 200 mA implica erro máximo de $\pm1$ mA.
+
+\subsection{Categoria de Sobretensão (CAT)}
+Norma IEC 61010‑1:
+\begin{description}
+  \item[CAT I:] circuitos de baixa energia (eletrônica interna).  
+  \item[CAT II:] cargas conectadas à tomada (eletrodomésticos).  
+  \item[CAT III:] instalações fixas (quadros, motores).  
+  \item[CAT IV:] origem da instalação (medidor, rede pública).  
+\end{description}
+
+Escolha sempre o instrumento com CAT e tensão de isolação adequados à aplicação.
+
+\section{True\,RMS vs.\ Medição de Pico}
+Multímetros simples calculam o valor eficaz assumindo forma senoidal pura (capturam o valor de pico). Instrumentos \textbf{True RMS} integram a potência instantânea, fornecendo o valor real eficaz mesmo para formas de onda distorcidas — essenciais em sistemas com harmônicas ou eletrônica de potência.
+
+\section{Resumo}
+Neste capítulo você aprendeu:
+\begin{itemize}
+  \item Conceitos fundamentais de medição, erros, exatidão e precisão.
+  \item Estrutura e funcionamento de instrumentos analógicos e digitais.
+  \item Importância das escalas, fundo de escala, resolução e categorias de segurança.
+  \item Diferença entre medições convencionais de pico e instrumentos True RMS.
+\end{itemize}
+
+\section{Exercícios Propostos}
+\begin{enumerate}
+  \item Classifique os erros a seguir como grosseiros, sistemáticos ou aleatórios:  
+        (a) leitura com paralaxe; (b) variação de temperatura; (c) ruído de rede elétrica.
+  \item Um voltímetro de classe 1,5 e F.S.\ de 300 V indica 120 V. Determine o intervalo de incerteza.
+  \item Explique por que um multímetro de 3½ dígitos não é adequado para medir pequenas variações de 0,1 mV.
+  \item Indique a categoria CAT mínima para um medidor que será utilizado diretamente na entrada do quadro de força de um prédio.
+\end{enumerate}

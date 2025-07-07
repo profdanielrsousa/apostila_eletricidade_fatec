@@ -1,0 +1,304 @@
+% Título do capítulo
+\capitulo{Geradores e Receptores Elétricos}\label{cap6}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+
+\begin{itemize}
+    \item Compreender o funcionamento de geradores elétricos e os diferentes tipos de fontes de energia.
+    \item Distinguir entre geradores ideais e reais, e aplicar o modelo equivalente com resistência interna.
+    \item Calcular potência útil, potência dissipada e potência total fornecida por um gerador.
+    \item Determinar o rendimento de um gerador e compreender os fatores que influenciam sua eficiência.
+    \item Identificar a condição de máxima transferência de potência e suas implicações práticas.
+    \item Compreender o funcionamento dos receptores elétricos e o conceito de força contra eletromotriz.
+    \item Aplicar equações para receptores e calcular as potências associadas ao seu funcionamento.
+    \item Analisar a associação de geradores em série e paralelo, identificando vantagens e cuidados.
+    \item Reconhecer os efeitos da corrente circulante e como evitá-la em associações mal planejadas.
+\end{itemize}
+}
+
+%\secao{Geradores e Receptores Elétricos}
+%\index{seção}
+
+\section{Introdução}
+Neste capítulo, abordaremos os principais tipos de \textbf{geradores e receptores elétricos}, analisando seus princípios de funcionamento, modelos ideais e reais, rendimento, potência útil e dissipação, além das associações em série e paralelo.
+
+\section{O Que São Geradores Elétricos?}
+Geradores elétricos são dispositivos capazes de \textbf{converter algum tipo de energia em energia elétrica}. As fontes podem ser:
+
+\begin{itemize}
+    \item \textbf{Eletroquímicas} (pilhas, baterias);
+    \item \textbf{Eletromagnéticas} (usinas hidroelétricas, termelétricas);
+    \item \textbf{Termoelétricas} (junção de dois metais distintos);
+    \item \textbf{Pisoelétricas} (pressão em cristais);
+    \item \textbf{Fotoelétricas} (luz incidindo sobre materiais semicondutores).
+\end{itemize}
+
+\subsection{Exemplos de Geração de Energia}
+\begin{itemize}
+    \item \textbf{Pilhas e Baterias:} reações químicas geram tensão elétrica.
+    \item \textbf{Usinas Hidrelétricas:} energia potencial da água move turbinas que ativam geradores.
+    \item \textbf{Efeito Termoelétrico:} emenda de dois metais diferentes, como cobre e alumínio, gera pequena tensão.
+    \item \textbf{Cristais Pisoelétricos:} pressão sobre o cristal gera tensão (ex: isqueiros, nebulizadores).
+    \item \textbf{Células Fotovoltaicas:} fótons solares liberam elétrons, gerando corrente elétrica.
+\end{itemize}
+
+\subsection*{Exemplo Prático: Usina Henry Borden}
+Localizada em Cubatão (SP), a usina recebe água da Represa Billings que desce por tubulações com 700 metros de desnível. A energia potencial da água é transformada em energia elétrica por meio de turbinas conectadas a geradores do tipo Pelton.
+
+\subsection{Geradores de Tensão e Corrente}
+Modelamos os geradores como fontes ideais ou reais:
+
+\begin{itemize}
+    \item \textbf{Gerador de Tensão Ideal:} mantém a mesma tensão independentemente da carga.
+    \item \textbf{Gerador de Corrente Ideal:} mantém corrente constante mesmo com variações na resistência da carga.
+\end{itemize}
+
+\subsubsection{Na Prática:}
+Todo gerador possui uma \textbf{resistência interna ($r$)} que causa perdas, diminuindo a tensão efetiva entregue à carga conforme a corrente aumenta.
+
+\subsection{Modelo Real de Gerador de Tensão Contínua}
+Representamos um gerador real por uma fonte de força eletromotriz ($\mathcal{E}$) em série com uma resistência interna ($r$).
+
+\[
+U = \mathcal{E} - r \cdot I
+\]
+
+Onde:
+\begin{itemize}
+    \item $U$: tensão nos terminais da fonte com carga conectada (V)
+    \item $\mathcal{E}$: tensão em vazio (sem carga)
+    \item $r$: resistência interna do gerador ($\Omega$)
+    \item $I$: corrente fornecida à carga (A)
+\end{itemize}
+
+\subsubsection{Curva Característica do Gerador}
+Com dois pontos experimentais (tensão em aberto e corrente de curto-circuito), pode-se traçar a \textbf{reta de carga}, cuja inclinação corresponde à resistência interna $r$.
+
+\[
+\text{Ponto 1: } I = 0 \Rightarrow U = \mathcal{E} \quad \text{(sem carga)}\\
+\text{Ponto 2: } U = 0 \Rightarrow I = \frac{\mathcal{E}}{r} \quad \text{(curto-circuito)}
+\]
+
+\subsection{Potência em Geradores Reais}
+A energia fornecida por um gerador se divide entre:
+
+\begin{itemize}
+    \item \textbf{Potência útil ($P_u$):} entregue à carga.
+    \item \textbf{Potência dissipada ($P_d$):} perdida na resistência interna do gerador.
+    \item \textbf{Potência total ($P_t$):} fornecida pela fonte.
+\end{itemize}
+
+\subsubsection{Equações Fundamentais}
+
+\[
+P_t = \mathcal{E} \cdot I
+\quad ; \quad
+P_u = U \cdot I = (\mathcal{E} - r \cdot I) \cdot I
+\quad ; \quad
+P_d = r \cdot I^2
+\]
+
+\subsection{Rendimento do Gerador}
+O rendimento ($\eta$) de um gerador é a razão entre a potência útil e a potência total fornecida:
+
+\[
+\eta = \frac{P_u}{P_t} = \frac{U \cdot I}{\mathcal{E} \cdot I} = \frac{U}{\mathcal{E}}
+\quad \Rightarrow \quad
+\eta = \frac{\mathcal{E} - r \cdot I}{\mathcal{E}}
+\]
+
+\textbf{Nota:} O rendimento pode ser expresso em forma decimal ou porcentagem.
+
+\subsection{Condição de Máxima Transferência de Potência}
+O gerador fornece \textbf{potência máxima à carga} quando:
+
+\[
+R_L = r
+\]
+
+Ou seja, a resistência da carga deve ser igual à resistência interna do gerador. Nesse caso:
+
+\begin{itemize}
+    \item A potência útil é máxima.
+    \item O rendimento é de apenas 50\% (a outra metade é dissipada).
+\end{itemize}
+
+\[
+P_{u_{\text{máx}}} = \frac{\mathcal{E}^2}{4r}
+\]
+
+\textbf{Importante:} essa condição é útil em sistemas que priorizam potência (como amplificadores), mas não é eficiente em sistemas que priorizam economia de energia (como fontes de alimentação).
+
+\subsection{Exemplo Resolvido}
+Um gerador real fornece uma tensão de $10\,\text{V}$ em vazio. Quando conectado a uma carga de $R_L = 4\,\Omega$, a tensão medida nos terminais cai para $8\,\text{V}$.
+
+\textbf{a) Qual a resistência interna do gerador?}
+
+\begin{itemize}
+    \item Corrente na carga:
+    \[
+    I = \frac{U}{R_L} = \frac{8}{4} = 2\,\text{A}
+    \]
+    \item Resistência interna:
+    \[
+    \mathcal{E} = U + r \cdot I \Rightarrow 10 = 8 + 2r \Rightarrow r = 1\,\Omega
+    \]
+\end{itemize}
+
+\textbf{b) Qual a potência útil, dissipada e total?}
+
+\[
+P_u = U \cdot I = 8 \cdot 2 = 16\,\text{W}
+\quad ; \quad
+P_d = r \cdot I^2 = 1 \cdot 2^2 = 4\,\text{W}
+\quad ; \quad
+P_t = \mathcal{E} \cdot I = 10 \cdot 2 = 20\,\text{W}
+\]
+
+\textbf{c) Qual o rendimento?}
+
+\[
+\eta = \frac{P_u}{P_t} = \frac{16}{20} = 0{,}8 = 80\%
+\]
+
+\section{Receptores Elétricos}
+Receptores são dispositivos que consomem energia elétrica para transformá-la em outro tipo de energia (térmica, mecânica, luminosa etc.). Exemplos:
+
+\begin{itemize}
+    \item Motores elétricos
+    \item Lâmpadas
+    \item Aparelhos eletrodomésticos
+    \item Dispositivos eletrônicos em geral
+\end{itemize}
+
+\subsection{Modelo Real do Receptor}
+Um receptor real possui:
+\begin{itemize}
+    \item Uma resistência interna ($r$), que dissipa parte da energia.
+    \item Uma tensão de contraposição ($\mathcal{E}_r$), que representa a energia útil convertida.
+\end{itemize}
+
+\textbf{Equação:}
+
+\[
+U = \mathcal{E}_r + r \cdot I
+\]
+
+\begin{itemize}
+    \item $U$: tensão nos terminais do receptor (V)
+    \item $\mathcal{E}_r$: contraposição eletromotriz (V)
+    \item $r$: resistência interna do receptor ($\Omega$)
+    \item $I$: corrente elétrica (A)
+\end{itemize}
+
+\subsection{Potência nos Receptores}
+A potência absorvida total é:
+
+\[
+P_t = U \cdot I
+\]
+
+Ela se divide em:
+\begin{itemize}
+    \item \textbf{Potência útil:} $\mathcal{E}_r \cdot I$ (convertida em trabalho útil)
+    \item \textbf{Potência dissipada:} $r \cdot I^2$ (perda em forma de calor)
+\end{itemize}
+
+\subsection{Exemplo Resolvido}
+Um motor elétrico funciona com $220\,\text{V}$ e consome $2\,\text{A}$. Sabendo que sua resistência interna é de $5\,\Omega$, determine:
+
+\begin{itemize}
+    \item \textbf{a) A força contra eletromotriz ($\mathcal{E}_r$):}
+    \[
+    U = \mathcal{E}_r + r \cdot I \Rightarrow 220 = \mathcal{E}_r + 5 \cdot 2
+    \Rightarrow \mathcal{E}_r = 210\,\text{V}
+    \]
+
+    \item \textbf{b) A potência total, útil e dissipada:}
+    \[
+    P_t = 220 \cdot 2 = 440\,\text{W}
+    \quad ; \quad
+    P_u = 210 \cdot 2 = 420\,\text{W}
+    \quad ; \quad
+    P_d = 5 \cdot 2^2 = 20\,\text{W}
+    \]
+\end{itemize}
+
+\subsection{Observação Importante:}
+Em geradores, a energia flui do gerador para a carga. Em receptores, a energia elétrica entra no componente e é parcialmente convertida e parcialmente dissipada.
+
+\subsection{Receptor em Corrente Alternada (CA)}
+Para motores e outros dispositivos em corrente alternada, conceitos como potência ativa, reativa e aparente devem ser considerados, mas isso será aprofundado em capítulos futuros.
+
+\subsection{Associação de Geradores}
+Geradores podem ser associados para fornecer maior tensão, corrente ou garantir redundância no sistema.
+
+\subsubsection{a) Associação em Série}
+\begin{itemize}
+    \item As tensões se somam:
+    \[
+    \mathcal{E}_{eq} = \mathcal{E}_1 + \mathcal{E}_2 + \dots + \mathcal{E}_n
+    \]
+    \item As resistências internas também se somam:
+    \[
+    r_{eq} = r_1 + r_2 + \dots + r_n
+    \]
+    \item A corrente no circuito é a mesma para todos os geradores.
+\end{itemize}
+
+\textbf{Aplicações:} baterias de lanternas, controle de tensão em painéis solares.
+
+\subsubsection{b) Associação em Paralelo}
+\begin{itemize}
+    \item Todos os geradores devem ter \textbf{a mesma tensão} ($\mathcal{E}$).
+    \item As resistências internas combinam-se como resistores em paralelo.
+    \item As correntes se dividem entre os geradores.
+\end{itemize}
+
+\[
+\frac{1}{r_{eq}} = \frac{1}{r_1} + \frac{1}{r_2} + \dots + \frac{1}{r_n}
+\]
+
+\textbf{Atenção:} se as tensões forem diferentes, haverá \textbf{corrente circulante}, que pode causar sobreaquecimento e danificar os componentes.
+
+\subsubsection{Exemplo: Corrente Circulante}
+Dois geradores com $\mathcal{E}_1 = 12\,\text{V}$ e $\mathcal{E}_2 = 9\,\text{V}$ conectados em paralelo tendem a equilibrar tensões, e o gerador mais forte (12 V) tentará "carregar" o outro, criando uma corrente interna indesejada.
+
+\textbf{Solução:} Sempre utilizar diodos ou circuitos de proteção quando houver risco de tensões diferentes em paralelo.
+
+\subsection{Considerações Finais}
+Neste capítulo, você aprendeu:
+
+\begin{itemize}
+    \item A diferença entre geradores ideais e reais.
+    \item A influência da resistência interna na tensão fornecida.
+    \item Como calcular a potência útil, dissipada e total.
+    \item Como determinar o rendimento de um gerador.
+    \item A condição de máxima transferência de potência.
+    \item O funcionamento de receptores reais, como motores.
+    \item Como associar geradores em série e paralelo de forma segura.
+\end{itemize}
+
+\section{Material Complementar}
+
+\midia{
+
+\begin{itemize}
+    \item Matéria do reporter Goulart de Andrade em 2003 na Usina Henry Borden: \url{https://www.youtube.com/watch?v=jPjhsKvv8fM}.
+    \item Canal Mundo da Elétrica, Usina Rio das Pedras: \url{https://www.youtube.com/watch?v=kjmFwB71tkk}
+
+\end{itemize}
+
+}
+
+
+\vspace{0.5cm}
+\noindent\textbf{Próximo capítulo:} \hyperref[cap7]{Leis de Kirchhoff.}
+
+

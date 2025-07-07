@@ -1,0 +1,212 @@
+% Título do capítulo
+\capitulo{Associação de Resistores}\label{cap3}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+
+\begin{itemize}
+    \item Compreender os conceitos de associação em série e paralelo de resistores.
+    \item Calcular a resistência equivalente em associações simples.
+    \item Reconhecer as características elétricas (tensão e corrente) nas diferentes associações.
+    \item Identificar situações reais onde resistores são associados em série ou paralelo.
+    \item Resolver circuitos com associação mista de resistores, utilizando estratégias passo a passo.
+    \item Avaliar os efeitos da resistência dos condutores nas quedas de tensão em circuitos reais.
+    \item Aplicar os conhecimentos em contextos práticos, como instalações elétricas residenciais e automotivas.
+    \item Verificar se os resultados obtidos em cálculos são coerentes com os princípios teóricos.
+\end{itemize}
+}
+
+\section{Revisão: Leis de Ohm}
+Antes de iniciarmos o estudo sobre associações de resistores, vamos relembrar brevemente as duas Leis de Ohm.
+
+\subsection*{Primeira Lei de Ohm}
+A corrente elétrica ($I$) que percorre um condutor é diretamente proporcional à tensão ($V$) aplicada e inversamente proporcional à resistência elétrica ($R$):
+
+\[
+I = \frac{V}{R}
+\quad \text{ou} \quad V = R \cdot I \quad \text{ou} \quad R = \frac{V}{I}
+\]
+
+\textbf{Triângulo REI}:
+
+\[
+\begin{array}{c}
+\boxed{V} \\
+\boxed{R \quad I}
+\end{array}
+\]
+
+\subsection*{Segunda Lei de Ohm}
+A resistência elétrica de um condutor é dada por:
+
+\[
+R = \rho \cdot \frac{L}{A}
+\]
+
+Onde:
+\begin{itemize}
+    \item $R$: resistência do fio (\(\Omega\))
+    \item $\rho$: resistividade do material
+    \item $L$: comprimento do condutor (m)
+    \item $A$: área da seção transversal (m²)
+\end{itemize}
+
+\section{Associação de Resistores}
+\index{seção}
+
+\subsection{Associação de Resistores em Série}
+A associação em série ocorre quando os resistores estão ligados um após o outro, em sequência, de modo que a mesma corrente percorre todos os componentes.
+
+%\begin{center}
+%\includegraphics[width=0.6\textwidth]{serie.png} % imagem a ser adicionada futuramente
+%\end{center}
+
+\subsubsection{Características:}
+\begin{itemize}
+    \item \textbf{A corrente ($I$) é a mesma em todos os resistores}.
+    \item \textbf{A tensão total} é a soma das quedas de tensão individuais:
+    \[
+    V = V_1 + V_2 + V_3 + \dots + V_n
+    \]
+    \item Cada queda de tensão ($V_i$) pode ser obtida pela Lei de Ohm:
+    \[
+    V_i = R_i \cdot I
+    \]
+\end{itemize}
+
+\subsubsection{Resistência Equivalente em Série}
+A resistência total é a soma das resistências:
+
+\[
+R_{eq} = R_1 + R_2 + R_3 + \dots + R_n
+\]
+
+\subsubsection{Aplicação Prática}
+Considere três lâmpadas incandescentes idênticas ligadas em série em uma tomada de $110\,\text{V}$. Cada lâmpada receberá apenas $\frac{1}{3}$ da tensão, resultando em menor luminosidade. Se uma lâmpada queimar, o circuito será interrompido — todas as demais também apagarão.
+
+\subsubsection{Exemplo Resolvido: Queda de Tensão em Condutores}
+Uma bateria de $24\,\text{V}$ alimenta uma carga de $3\,\Omega$ através de dois fios, cada um com resistência de $0{,}5\,\Omega$. Determine a tensão na carga.
+
+\textbf{Solução:}
+\begin{itemize}
+    \item Resistência equivalente: $0{,}5 + 3 + 0{,}5 = 4\,\Omega$
+    \item Corrente total:
+    \[
+    I = \frac{V}{R} = \frac{24}{4} = 6\,\text{A}
+    \]
+    \item Tensão sobre a carga:
+    \[
+    V_{\text{carga}} = R_{\text{carga}} \cdot I = 3 \cdot 6 = 18\,\text{V}
+    \]
+\end{itemize}
+
+\textbf{Conclusão:} Mesmo com uma fonte de $24\,\text{V}$, a carga recebe apenas $18\,\text{V}$ devido às perdas nos condutores.
+
+\subsection{Associação de Resistores em Paralelo}
+Na associação em paralelo, os resistores estão ligados de modo que seus terminais estejam conectados aos mesmos pontos. Isso significa que a tensão sobre cada resistor é a mesma.
+
+%\begin{center}
+%\includegraphics[width=0.6\textwidth]{paralelo.png} % imagem a ser adicionada futuramente
+%\end{center}
+
+\subsubsection{Características:}
+\begin{itemize}
+    \item \textbf{A tensão ($V$) é igual para todos os resistores}:
+    \[
+    V = V_1 = V_2 = V_3 = \dots = V_n
+    \]
+    \item \textbf{A corrente total ($I$)} é dividida entre os resistores:
+    \[
+    I = I_1 + I_2 + I_3 + \dots + I_n
+    \]
+    \item Cada corrente individual pode ser calculada pela Lei de Ohm:
+    \[
+    I_i = \frac{V}{R_i}
+    \]
+\end{itemize}
+
+\subsubsection{Resistência Equivalente em Paralelo}
+A fórmula geral para a resistência equivalente é:
+
+\[
+\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots + \frac{1}{R_n}
+\]
+
+\textbf{Fórmula genérica:}
+\[
+\frac{1}{R_{eq}} = \sum_{i=1}^{n} \frac{1}{R_i}
+\]
+
+\subsubsection{Casos Especiais}
+\begin{itemize}
+    \item \textbf{Resistores com o mesmo valor:}
+    \[
+    R_{eq} = \frac{R}{n}
+    \]
+    Onde $R$ é o valor de cada resistor e $n$ é a quantidade de resistores.
+
+    \item \textbf{Dois resistores apenas:} produto pela soma:
+    \[
+    R_{eq} = \frac{R_1 \cdot R_2}{R_1 + R_2}
+    \]
+\end{itemize}
+
+\subsubsection{Importante:}
+O valor da resistência equivalente de uma associação em paralelo \textbf{sempre será menor} que o menor resistor da associação.
+
+\textbf{Exemplo:}
+Para resistores de $10\,\Omega$, $20\,\Omega$ e $5\,\Omega$ em paralelo, o valor de $R_{eq}$ será menor que $5\,\Omega$.
+
+\subsubsection{Aplicação: Instalações Elétricas}
+Em circuitos elétricos residenciais, os dispositivos (lâmpadas, tomadas, etc.) são ligados em paralelo, para que todos recebam a mesma tensão da rede (geralmente $127\,\text{V}$ ou $220\,\text{V}$). A corrente é dividida conforme a resistência de cada aparelho.
+
+\subsection{Observações Práticas}
+\subsubsection{Queda de Tensão em Condutores}
+Condutores reais apresentam resistência, mesmo que pequena. Em casos de alta corrente ou grandes comprimentos, essa resistência pode causar quedas de tensão significativas.
+
+\textbf{Exemplo prático:} Instalações de chuveiros elétricos.
+
+\begin{itemize}
+    \item Um chuveiro elétrico pode demandar de $25$ a $35\,\text{A}$ de corrente.
+    \item Se os condutores forem finos (com seção transversal pequena), a resistência será maior.
+    \item Isso pode provocar aquecimento dos cabos, queda de desempenho e até risco de incêndio.
+    \item Por isso, utilizam-se cabos de \textbf{4 mm²} ou \textbf{6 mm²} para chuveiros.
+\end{itemize}
+
+\subsubsection{Instalações Automotivas}
+Em automóveis, problemas de queda de tensão podem ocorrer devido à má conexão entre a bateria e o chassi. Esse tipo de problema é comum quando a \textbf{cordoalha de aterramento} está com mau contato, resultando em dificuldades de partida, falhas de recarga da bateria ou funcionamento irregular de componentes eletrônicos.
+
+\subsection{Comparativo: Série vs. Paralelo}
+
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Característica} & \textbf{Série} & \textbf{Paralelo} \\
+\hline
+Tensão & Dividida & Igual em todos os resistores \\
+Corrente & Igual em todos os resistores & Dividida \\
+Fórmula de $R_{eq}$ & Soma direta & Soma dos inversos \\
+Comportamento se um resistor queimar & Abre todo o circuito & Os demais continuam funcionando \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Considerações Finais}
+Neste capítulo, você aprendeu:
+
+\begin{itemize}
+    \item Como funcionam as associações em série e paralelo.
+    \item Como aplicar a Lei de Ohm para calcular tensões, correntes e resistências equivalentes.
+    \item Como essas associações se aplicam em instalações elétricas residenciais e automotivas.
+    \item Que o correto dimensionamento de cabos influencia diretamente no funcionamento e segurança dos circuitos.
+\end{itemize}
+
+\textbf{Dica:} sempre verifique se o valor da resistência equivalente faz sentido. Em série, deve ser maior que qualquer uma das individuais. Em paralelo, deve ser menor que a menor delas.
+
+\vspace{0.5cm}
+\noindent\textbf{Próximo capítulo:} \hyperref[cap4]{Exercícios sobre Associação de Resistores.}

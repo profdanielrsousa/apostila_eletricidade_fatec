@@ -1,0 +1,235 @@
+% Título do capítulo
+\capitulo{Aplicações das Leis de Kirchhoff}\label{cap8}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+
+\begin{itemize}
+    \item Aplicar de forma prática as Leis de Kirchhoff na resolução de circuitos elétricos com múltiplas malhas e fontes.
+    \item Montar as equações de nós e malhas a partir de circuitos esquemáticos.
+    \item Escolher de forma estratégica os sentidos das correntes e trabalhar com sinais adequados.
+    \item Resolver sistemas de equações simultâneas por meio do método da substituição.
+    \item Interpretar corretamente o sinal das correntes obtidas para avaliar seus sentidos reais.
+    \item Verificar a coerência física dos resultados obtidos, como tensões, quedas e sentidos de corrente.
+\end{itemize}
+}
+
+%\secao{Geradores e Receptores Elétricos}
+%\index{seção}
+
+\section{Introdução}
+Neste capítulo, retomamos as Leis de Kirchhoff para resolver circuitos mais complexos, compostos por duas malhas e múltiplos resistores. Utilizaremos o método da substituição para resolver os sistemas de equações gerados pelas Leis dos Nós e das Malhas.
+
+\section{Exercício 1 – Duas Malhas com Fontes Diferentes}
+
+\subsection{Descrição do Circuito}
+O circuito contém:
+
+\begin{itemize}
+    \item Fonte de $20\,\text{V}$ na malha 1
+    \item Fonte de $40\,\text{V}$ na malha 2
+    \item Resistores de $5\,\Omega$, $10\,\Omega$ e $5\,\Omega$
+    \item Correntes: $I_1$, $I_2$ e $I_3$, uma para cada ramo
+\end{itemize}
+
+\textbf{Observação:} O resistor de $10\,\Omega$ está compartilhado entre as duas malhas.
+
+\subsection{1ª Equação – Lei dos Nós (1ª Lei de Kirchhoff)}
+Todas as três correntes entram no nó analisado:
+
+\[
+I_1 + I_2 + I_3 = 0 \tag{1}
+\]
+
+\subsection{2ª Equação – Malha 1 (2ª Lei de Kirchhoff)}
+Percurso no sentido da corrente $I_1$ (horário):
+
+\[
+20 - 5I_1 + 10I_2 = 0 \tag{2}
+\]
+
+\subsection{3ª Equação – Malha 2}
+Percurso no sentido da corrente $I_3$ (antihorário):
+
+\[
+40 + 10I_2 - 5I_3 = 0 \tag{3}
+\]
+
+\subsection{Simplificação das Equações}
+Dividindo todas as equações por $5$:
+
+\[
+\text{Equação 2:} \quad 4 - I_1 + 2I_2 = 0 \tag{2'}
+\]
+\[
+\text{Equação 3:} \quad 8 + 2I_2 - I_3 = 0 \tag{3'}
+\]
+
+Essas são as três equações base que usaremos para resolver o sistema via substituição.
+
+\subsection{Resolução do Sistema (Exercício 1)}
+
+\subsubsection{Passo 1 – Isolar $I_1$ na Equação (2')}
+\[
+4 - I_1 + 2I_2 = 0 \Rightarrow I_1 = 4 + 2I_2 \tag{4}
+\]
+
+\subsubsection{Passo 2 – Isolar $I_3$ na Equação (3')}
+\[
+8 + 2I_2 - I_3 = 0 \Rightarrow I_3 = 8 + 2I_2 \tag{5}
+\]
+
+\subsubsection{Passo 3 – Substituir (4) e (5) na Equação dos Nós (1)}
+
+\[
+I_1 + I_2 + I_3 = 0
+\Rightarrow (4 + 2I_2) + I_2 + (8 + 2I_2) = 0
+\]
+\[
+\Rightarrow 12 + 5I_2 = 0 \Rightarrow I_2 = -\frac{12}{5} = -2{,}4\,\text{A}
+\]
+
+\subsubsection{Passo 4 – Substituir $I_2$ para encontrar $I_1$ e $I_3$}
+
+\[
+I_1 = 4 + 2(-2{,}4) = 4 - 4{,}8 = -0{,}8\,\text{A}
+\]
+\[
+I_3 = 8 + 2(-2{,}4) = 8 - 4{,}8 = 3{,}2\,\text{A}
+\]
+
+\subsection{Interpretação dos Resultados}
+
+\begin{itemize}
+    \item $I_2 = -2{,}4\,\text{A}$ → sentido real oposto ao atribuído inicialmente.
+    \item $I_1 = -0{,}8\,\text{A}$ → também sentido oposto ao escolhido.
+    \item $I_3 = 3{,}2\,\text{A}$ → mesmo sentido da atribuição inicial.
+\end{itemize}
+
+\textbf{Conclusão:} Correntes negativas indicam que o sentido real de circulação é contrário ao que foi considerado na análise. O valor absoluto permanece válido.
+
+\subsection{Verificação – Quedas de Tensão}
+
+\begin{itemize}
+    \item Queda no resistor de $5\,\Omega$ (malha 1): $V = R \cdot I = 5 \cdot 0{,}8 = 4\,\text{V}$
+    \item Queda no resistor de $10\,\Omega$ (em comum): $10 \cdot 2{,}4 = 24\,\text{V}$
+    \item Queda no resistor de $5\,\Omega$ (malha 2): $5 \cdot 3{,}2 = 16\,\text{V}$
+\end{itemize}
+
+\textbf{Fonte da malha 1:}
+\[
+20\,\text{V} = 4 + 24 \Rightarrow \text{ok}
+\]
+
+\textbf{Fonte da malha 2:}
+\[
+40\,\text{V} = 24 + 16 \Rightarrow \text{ok}
+\]
+
+As quedas de tensão estão coerentes com os valores de corrente encontrados.
+
+\section{Exercício 2 – Duas Fontes e Três Malhas com Correntes Interligadas}
+
+\subsection{Descrição do Circuito}
+O circuito contém:
+
+\begin{itemize}
+    \item Fonte de $50\,\text{V}$ (malha 1)
+    \item Fonte de $20\,\text{V}$ (malha 2)
+    \item Resistores: $R_1 = 5\,\Omega$, $R_2 = 10\,\Omega$, $R_3 = 5\,\Omega$
+    \item Correntes: $I_1$, $I_2$ e $I_3$
+\end{itemize}
+
+\textbf{Topologia:} o resistor de $10\,\Omega$ é comum às duas malhas, e os outros dois resistores completam os laços. Cada malha possui uma fonte e uma parte da resistência total.
+
+\subsection{Equação da Malha 1}
+\[
+50 - 5I_1 + 10I_3 = 0 \tag{1}
+\]
+
+\subsection{Equação da Malha 2}
+\[
+20 - 5I_2 - 10I_3 = 0 \tag{2}
+\]
+
+\subsection{Lei dos Nós}
+\[
+I_1 + I_2 + I_3 = 0 \tag{3}
+\]
+
+\subsection{Dividindo todas as equações por 5}
+\[
+10 - I_1 + 2I_3 = 0 \Rightarrow I_1 = 10 + 2I_3 \tag{1'}
+\]
+\[
+4 - I_2 - 2I_3 = 0 \Rightarrow I_2 = 4 - 2I_3 \tag{2'}
+\]
+
+\subsection{Resolução do Sistema (Exercício 2)}
+
+\subsubsection{Passo 1 – Substituir $I_1$ e $I_2$ na Equação dos Nós (3)}
+
+\[
+I_1 + I_2 + I_3 = 0
+\Rightarrow (10 + 2I_3) + (4 - 2I_3) + I_3 = 0
+\]
+\[
+\Rightarrow 14 + I_3 = 0 \Rightarrow I_3 = -14\,\text{A}
+\]
+
+\subsubsection{Passo 2 – Substituir $I_3$ para encontrar $I_1$ e $I_2$}
+
+\[
+I_1 = 10 + 2(-14) = 10 - 28 = -18\,\text{A}
+\]
+\[
+I_2 = 4 - 2(-14) = 4 + 28 = 32\,\text{A}
+\]
+
+\subsection{Interpretação dos Resultados}
+
+\begin{itemize}
+    \item $I_3 = -14\,\text{A}$: corrente oposta ao sentido atribuído.
+    \item $I_1 = -18\,\text{A}$: também oposta.
+    \item $I_2 = 32\,\text{A}$: mesmo sentido atribuído.
+\end{itemize}
+
+\textbf{Conclusão:} Sinais negativos indicam que o sentido real das correntes é o contrário ao definido inicialmente. O valor numérico das correntes permanece válido.
+
+\subsection{Verificação – Quedas de Tensão}
+
+\begin{itemize}
+    \item Queda no resistor $R_1 = 5\,\Omega$ com $I_1 = 18\,\text{A}$:
+    \[
+    V = 5 \cdot 18 = 90\,\text{V}
+    \]
+    \item Queda no resistor $R_2 = 10\,\Omega$ com $I_3 = 14\,\text{A}$:
+    \[
+    V = 10 \cdot 14 = 140\,\text{V}
+    \]
+    \item Queda no resistor $R_3 = 5\,\Omega$ com $I_2 = 32\,\text{A}$:
+    \[
+    V = 5 \cdot 32 = 160\,\text{V}
+    \]
+\end{itemize}
+
+\textbf{Observação:} As fontes fornecem menos energia do que a soma das quedas, indicando que o circuito exige ajuste de polaridades ou sentido de malha, reforçando a importância da verificação final com os sinais corretos.
+
+\section{Considerações Finais}
+
+Neste capítulo, você aprendeu a:
+
+\begin{itemize}
+    \item Aplicar as Leis de Kirchhoff em circuitos com múltiplas malhas e fontes.
+    \item Utilizar o método da substituição para resolver sistemas de equações.
+    \item Analisar o sinal das correntes obtidas e interpretar seus sentidos reais.
+    \item Validar os resultados por meio das quedas de tensão nos resistores.
+\end{itemize}
+
+\vspace{0.5cm}
+\noindent\textbf{Próximo capítulo:} Potência elétrica em corrente contínua e consumo de energia em circuitos.

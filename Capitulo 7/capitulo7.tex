@@ -1,0 +1,303 @@
+% Título do capítulo
+\capitulo{Leis de Kirchhoff}\label{cap7}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+
+\begin{itemize}
+    \item Compreender a importância das Leis de Kirchhoff na análise de circuitos elétricos e eletrônicos.
+    \item Reconhecer os elementos de um circuito: nós, ramos e malhas.
+    \item Aplicar a Primeira Lei de Kirchhoff (Lei dos Nós) para analisar a conservação da corrente em um nó.
+    \item Aplicar a Segunda Lei de Kirchhoff (Lei das Malhas) para relacionar tensões em percursos fechados.
+    \item Resolver circuitos simples e compostos utilizando sistematicamente as Leis de Kirchhoff.
+    \item Interpretar e montar equações a partir de esquemas de circuitos elétricos.
+    \item Validar resultados considerando o arredondamento e coerência física das grandezas envolvidas.
+\end{itemize}
+}
+
+%\secao{Leis de Kirchhoff}
+%\index{seção}
+
+
+\section{Introdução às Leis de Kirchhoff}
+As Leis de Kirchhoff, em conjunto com a Lei de Ohm, compõem um conjunto essencial de ferramentas matemáticas para a análise de circuitos elétricos e eletrônicos. Elas são especialmente úteis em situações onde há mais de um caminho possível para a corrente ou múltiplas fontes de tensão no circuito.
+
+\section{Definições Importantes}
+Antes de aplicarmos as Leis de Kirchhoff, é necessário compreender alguns conceitos básicos de topologia de circuitos:
+
+\begin{itemize}
+    \item \textbf{Nó:} ponto de conexão entre três ou mais condutores.
+    \item \textbf{Nó secundário:} interliga apenas dois condutores; geralmente desconsiderado em análises.
+    \item \textbf{Ramo:} trecho de circuito compreendido entre dois nós principais consecutivos.
+    \item \textbf{Malha:} percurso fechado composto por ao menos dois ramos.
+    \item \textbf{Rede elétrica:} conjunto de elementos elétricos (fontes, resistores, etc.) interligados.
+\end{itemize}
+
+\subsection{Exemplo Prático}
+Em um circuito composto por baterias e resistores, podemos identificar:
+\begin{itemize}
+    \item \textbf{Nós principais:} pontos A, B, C e E (três ou mais conexões).
+    \item \textbf{Nós secundários:} D e F (apenas duas conexões).
+    \item \textbf{Ramos:} segmentos como AD, AC, FB, CE, BE etc.
+    \item \textbf{Malhas:} percursos fechados como ACED-A, AFBCA, BECBE etc.
+\end{itemize}
+
+\textbf{Observação:} Na prática, nós secundários não influenciam na análise, pois não alteram o comportamento elétrico do circuito.
+
+\section{Primeira Lei de Kirchhoff – Lei dos Nós}
+A Primeira Lei de Kirchhoff, ou Lei dos Nós, afirma:
+
+\begin{quote}
+\textit{A soma das correntes que entram em um nó é igual à soma das correntes que saem dele.}
+\end{quote}
+
+\[
+\sum I_{\text{entrada}} = \sum I_{\text{saída}}
+\]
+
+\subsection{Forma Algébrica}
+Ao atribuir sinais às correntes (positiva para entrada, negativa para saída), temos:
+
+\[
+I_1 + I_3 + I_4 - I_2 - I_5 = 0
+\]
+
+\textbf{Interpretação:} A corrente elétrica se conserva em cada nó — o que entra deve sair. Isso se baseia na conservação da carga elétrica.
+
+\subsection{Exemplo:}
+Dado um nó com:
+\begin{itemize}
+    \item Correntes entrando: $I_1 = 2\,\text{A}$, $I_3 = 1\,\text{A}$, $I_4 = 0{,}5\,\text{A}$
+    \item Correntes saindo: $I_2 = 2\,\text{A}$, $I_5 = 1{,}5\,\text{A}$
+\end{itemize}
+
+\[
+I_1 + I_3 + I_4 = 2 + 1 + 0{,}5 = 3{,}5\,\text{A}
+\quad ; \quad
+I_2 + I_5 = 2 + 1{,}5 = 3{,}5\,\text{A}
+\Rightarrow \text{Lei dos Nós verificada.}
+\]
+
+\section{Segunda Lei de Kirchhoff – Lei das Malhas}
+A Segunda Lei de Kirchhoff afirma:
+
+\begin{quote}
+\textit{A soma algébrica das tensões ao longo de uma malha fechada é igual a zero.}
+\end{quote}
+
+\[
+\sum U = 0
+\]
+
+Isso significa que a energia fornecida por fontes é totalmente consumida nos elementos resistivos e demais receptores ao longo da malha.
+
+\subsection{Regras para os Sinais}
+Ao percorrer uma malha (em sentido arbitrário, geralmente horário):
+
+\begin{itemize}
+    \item \textbf{Fonte (gerador):}
+    \begin{itemize}
+        \item Se o percurso vai do polo negativo para o positivo → tensão positiva ($+\mathcal{E}$)
+        \item Se vai do polo positivo para o negativo → tensão negativa ($-\mathcal{E}$)
+    \end{itemize}
+
+    \item \textbf{Resistor:}
+    \begin{itemize}
+        \item Se o percurso vai no sentido da corrente → queda de tensão → sinal negativo ($-RI$)
+        \item Se for contra a corrente → elevação de tensão → sinal positivo ($+RI$)
+    \end{itemize}
+\end{itemize}
+
+\section{Exemplo de Aplicação da 2ª Lei de Kirchhoff}
+\textbf{Circuito com um gerador e dois resistores em série:}
+
+\begin{itemize}
+    \item $\mathcal{E} = 12\,\text{V}$
+    \item $R_1 = 2\,\Omega$, $R_2 = 4\,\Omega$
+\end{itemize}
+
+Corrente: a mesma nos dois resistores.
+
+\[
+\sum U = \mathcal{E} - R_1 \cdot I - R_2 \cdot I = 0
+\quad \Rightarrow \quad
+12 - 2I - 4I = 0
+\Rightarrow I = 2\,\text{A}
+\]
+
+\subsection{Verificação:}
+\begin{itemize}
+    \item Queda em $R_1$: $U_1 = 2 \cdot 2 = 4\,\text{V}$
+    \item Queda em $R_2$: $U_2 = 4 \cdot 2 = 8\,\text{V}$
+    \item Soma das quedas: $4 + 8 = 12\,\text{V}$ ✅
+\end{itemize}
+
+\section{Malhas com Mais de Uma Fonte}
+\textbf{Exemplo com duas fontes em sentidos opostos:}
+
+\begin{itemize}
+    \item $\mathcal{E}_1 = 12\,\text{V}$ (positivo para negativo no sentido da malha)
+    \item $\mathcal{E}_2 = 4\,\text{V}$ (negativo para positivo no sentido da malha)
+    \item Resistores: $R_1 = 2\,\Omega$, $R_2 = 6\,\Omega$
+\end{itemize}
+
+\textbf{Equação da malha:}
+
+\[
+-\mathcal{E}_1 + \mathcal{E}_2 + R_1 \cdot I + R_2 \cdot I = 0
+\Rightarrow -12 + 4 + 2I + 6I = 0
+\Rightarrow 8I = 8 \Rightarrow I = 1\,\text{A}
+\]
+
+\textbf{Verificação:}
+\begin{itemize}
+    \item Queda total: $2 + 6 = 8\,\Omega \cdot 1\,\text{A} = 8\,\text{V}$
+    \item Diferença entre as fontes: $12 - 4 = 8\,\text{V}$ ✅
+\end{itemize}
+
+\section{Análise de Circuito com Duas Malhas}
+Em circuitos com duas malhas, podemos aplicar a Segunda Lei de Kirchhoff a cada uma delas, definindo correntes independentes para cada malha.
+
+\textbf{Exemplo:} Circuito com duas malhas, três resistores e uma fonte de $12\,\text{V}$
+
+\begin{itemize}
+    \item $R_1 = 2\,\Omega$ (em série com a fonte)
+    \item $R_2 = 4\,\Omega$ (em comum entre as malhas)
+    \item $R_3 = 6\,\Omega$ (na segunda malha)
+    \item Correntes: $I_1$ (malha da esquerda), $I_2$ (malha da direita)
+\end{itemize}
+
+\subsection{Equações das Malhas}
+
+\textbf{Malha 1:}
+
+\[
+12 - 2I_1 - 4(I_1 - I_2) = 0
+\Rightarrow 12 - 2I_1 - 4I_1 + 4I_2 = 0
+\Rightarrow -6I_1 + 4I_2 = -12 \quad (1)
+\]
+
+\textbf{Malha 2:}
+
+\[
+-4(I_2 - I_1) - 6I_2 = 0
+\Rightarrow -4I_2 + 4I_1 - 6I_2 = 0
+\Rightarrow 4I_1 - 10I_2 = 0 \quad (2)
+\]
+
+\subsection{Resolvendo o Sistema de Equações}
+Das equações (1) e (2):
+
+\[
+\begin{cases}
+-6I_1 + 4I_2 = -12 \\
+4I_1 - 10I_2 = 0
+\end{cases}
+\]
+
+Multiplicando a segunda equação por $1.5$ para eliminar $I_1$:
+
+\[
+6I_1 - 15I_2 = 0 \\
+-6I_1 + 4I_2 = -12
+\]
+
+Somando:
+
+\[
+-11I_2 = -12 \Rightarrow I_2 \approx 1{,}09\,\text{A}
+\Rightarrow I_1 = \frac{10I_2}{4} \approx 2{,}73\,\text{A}
+\]
+
+\subsection{Interpretação}
+\begin{itemize}
+    \item Como os valores são positivos, os sentidos das correntes atribuídos inicialmente estavam corretos.
+    \item A corrente que passa por $R_2$ (compartilhado) é $I_1 - I_2 = 1{,}64\,\text{A}$, no sentido da malha 1 para a 2.
+\end{itemize}
+
+\section{Dica de Resolução}
+Para circuitos com mais de uma malha:
+\begin{enumerate}
+    \item Atribua correntes com sentidos arbitrários em cada malha.
+    \item Aplique a 2ª Lei de Kirchhoff em cada malha.
+    \item Nos resistores compartilhados, utilize $(I_1 - I_2)$ ou $(I_2 - I_1)$, conforme a malha analisada.
+    \item Resolva o sistema resultante por substituição, escalonamento ou método matricial.
+    \item Verifique os sinais: resultado negativo indica sentido oposto ao assumido inicialmente.
+\end{enumerate}
+
+\section{Circuito com Duas Fontes em Malhas Diferentes}
+
+\textbf{Exemplo:} Um circuito possui duas malhas e duas fontes:
+
+\begin{itemize}
+    \item $\mathcal{E}_1 = 10\,\text{V}$ na malha 1
+    \item $\mathcal{E}_2 = 5\,\text{V}$ na malha 2
+    \item Resistores: $R_1 = 2\,\Omega$, $R_2 = 4\,\Omega$ (comum), $R_3 = 2\,\Omega$
+    \item Correntes: $I_1$ (malha 1), $I_2$ (malha 2)
+\end{itemize}
+
+\subsection{Equações das Malhas}
+
+\textbf{Malha 1:}
+
+\[
+10 - 2I_1 - 4(I_1 - I_2) = 0 \Rightarrow 10 - 2I_1 - 4I_1 + 4I_2 = 0
+\Rightarrow -6I_1 + 4I_2 = -10 \quad (1)
+\]
+
+\textbf{Malha 2:}
+
+\[
+5 - 2I_2 - 4(I_2 - I_1) = 0 \Rightarrow 5 - 2I_2 - 4I_2 + 4I_1 = 0
+\Rightarrow 4I_1 - 6I_2 = -5 \quad (2)
+\]
+
+\subsection{Resolvendo o Sistema}
+
+Multiplicamos (1) por 2:
+
+\[
+-12I_1 + 8I_2 = -20 \quad (1')
+\]
+
+Multiplicamos (2) por 3:
+
+\[
+12I_1 - 18I_2 = -15 \quad (2')
+\]
+
+Somando (1') e (2'):
+
+\[
+-10I_2 = -35 \Rightarrow I_2 = 3{,}5\,\text{A}
+\Rightarrow I_1 = \frac{4I_2 + 10}{6} = \frac{24 + 10}{6} = \frac{34}{6} \approx 5{,}67\,\text{A}
+\]
+
+\subsection{Verificação}
+
+\[
+I_{R_2} = I_1 - I_2 = 5{,}67 - 3{,}5 = 2{,}17\,\text{A}
+\]
+
+\textbf{Conclusão:} O resultado confirma que as malhas estão interligadas corretamente e as tensões se equilibram ao redor do circuito.
+
+\section{Considerações Finais}
+
+Neste capítulo, você aprendeu a:
+
+\begin{itemize}
+    \item Identificar os elementos principais de um circuito: nós, ramos e malhas.
+    \item Aplicar a Primeira Lei de Kirchhoff para resolver circuitos com múltiplos caminhos de corrente.
+    \item Utilizar a Segunda Lei de Kirchhoff para escrever e resolver equações de malhas.
+    \item Trabalhar com equações simultâneas de sistemas com duas ou mais malhas.
+    \item Interpretar corretamente os sinais das correntes obtidas.
+\end{itemize}
+
+\vspace{0.5cm}
+\noindent\textbf{Próximo capítulo:} \hyperref[cap8]{Aplicações das Leis de Kirchhoff.}
+

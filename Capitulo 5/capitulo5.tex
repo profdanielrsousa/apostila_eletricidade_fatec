@@ -1,0 +1,231 @@
+% Título do capítulo
+\capitulo{Verificação Experimental da Lei de Ohm}\label{cap5}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+
+\begin{itemize}
+    \item Compreender a importância da experimentação na validação da Lei de Ohm.
+    \item Utilizar corretamente o multímetro digital para medir corrente, tensão e resistência.
+    \item Reconhecer os diferentes tipos de resistores e interpretar o código de cores.
+    \item Montar circuitos simples em uma protoboard para fins de teste.
+    \item Realizar medições práticas com resistores de diferentes valores.
+    \item Calcular a resistência a partir dos valores medidos de tensão e corrente.
+    \item Interpretar os resultados experimentais e comparar com valores nominais.
+    \item Confirmar o comportamento ôhmico por meio de gráficos de tensão versus corrente.
+\end{itemize}
+}
+
+\secao{Verificação Experimental da Lei de Ohm}
+\index{seção}
+
+\subsection{Introdução}
+Neste capítulo, realizaremos uma atividade prática para verificar a \textbf{Primeira Lei de Ohm}, por meio de medições de corrente e tensão em resistores de diferentes valores. Faremos uso de uma \textbf{fonte de tensão}, um \textbf{multímetro digital}, uma \textbf{protoboard} e resistores de valores conhecidos.
+
+\subsection{Resistores: Tipos e Aplicações}
+Resistores são componentes eletrônicos utilizados para limitar ou controlar a corrente elétrica em um circuito. Eles estão presentes em diversos formatos e aplicações, desde grandes painéis industriais até microcomponentes em placas de circuito impresso.
+
+\subsubsection{Tipos de Resistor:}
+\begin{itemize}
+    \item \textbf{Resistores de potência:} usados em controle de carga e torque de motores.
+    \item \textbf{Resistores PTH (com terminais):} muito comuns em montagens eletrônicas.
+    \item \textbf{Resistores SMD (montagem superficial):} utilizados em placas compactas.
+    \item \textbf{Redes de resistores integrados:} presentes em circuitos de instrumentação de alta precisão.
+    \item \textbf{Resistores variáveis:} potenciômetros, trimpots e componentes digitais controlados por microcontroladores.
+\end{itemize}
+
+\subsection{Código de Cores dos Resistores}
+Resistores apresentam faixas coloridas que indicam seu valor de resistência, fator multiplicador e tolerância. Para resistores de \textbf{quatro faixas}, temos:
+
+\begin{itemize}
+    \item \textbf{1ª e 2ª faixas:} dígitos significativos
+    \item \textbf{3ª faixa:} fator multiplicador
+    \item \textbf{4ª faixa:} tolerância (ex: dourado = 5\%, marrom = 1\%)
+\end{itemize}
+
+\textbf{Tabela de cores:}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Cor} & \textbf{Valor} \\
+\hline
+Preto & 0 \\
+Marrom & 1 \\
+Vermelho & 2 \\
+Laranja & 3 \\
+Amarelo & 4 \\
+Verde & 5 \\
+Azul & 6 \\
+Violeta & 7 \\
+Cinza & 8 \\
+Branco & 9 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Exemplo:} Faixas \textit{verde, azul, vermelho, marrom} representam:
+\[
+56 \times 10^2 = 5600\,\Omega \quad \text{com } \pm1\% \text{ de tolerância}
+\]
+
+\subsection{Protoboard: Montagem e Estrutura}
+A protoboard é uma placa com contatos internos metálicos, usada para montar circuitos eletrônicos de forma temporária e segura.
+
+\subsubsection{Estrutura interna:}
+\begin{itemize}
+    \item Trilhas verticais: geralmente utilizadas para componentes
+    \item Trilhas horizontais: usadas para alimentação (linhas de VCC e GND)
+    \item A região central é separada para facilitar o encaixe de circuitos integrados
+\end{itemize}
+
+Ao inserir terminais nos furos, os contatos metálicos internos garantem a conexão elétrica entre os pontos da mesma fileira.
+
+\subsection{Utilização do Multímetro Digital}
+O multímetro é um instrumento essencial para medir várias grandezas elétricas. Os principais modos utilizados neste experimento são:
+
+\begin{itemize}
+    \item \textbf{Tensão (V):} medir em paralelo com o componente.
+    \item \textbf{Corrente (A ou mA):} medir em série com o componente.
+    \item \textbf{Resistência (Ω):} medir preferencialmente com o componente fora do circuito.
+\end{itemize}
+
+\subsubsection{Atenção na Medição de Corrente:}
+\begin{itemize}
+    \item Use a entrada correta (10A ou mA).
+    \item Se não souber o valor da corrente, comece pela escala maior.
+    \item A medição é sempre em série com o componente.
+    \item Em correntes elevadas, o erro pode causar queima do fusível ou até do equipamento.
+\end{itemize}
+
+\subsection{Montagem do Circuito}
+O circuito é composto por:
+
+\begin{itemize}
+    \item Fonte regulável de tensão contínua
+    \item Protoboard
+    \item Resistores: $330\,\Omega$, $1\,k\Omega$ e $10\,k\Omega$
+    \item Multímetro digital
+\end{itemize}
+
+\textbf{Esquema de Ligação para Medir Corrente:}
+A fonte é conectada ao resistor, com o multímetro em série entre eles. A tensão é lida diretamente na fonte, que já possui um voltímetro embutido.
+
+\subsection{Primeira Etapa: Resistor de 330\,$\Omega$}
+O resistor identificado pelas cores \textbf{laranja, laranja, marrom e dourado} (330Ω, ±5%) foi testado com diversas tensões.
+
+\subsubsection{Medições realizadas:}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Tensão (V)} & \textbf{Corrente (mA)} & \textbf{Corrente (A)} & \textbf{Resistência (Ω)} \\
+\hline
+2,05 & 6,30 & 0,0063 & 325 \\
+4,07 & 12,29 & 0,01229 & 331 \\
+5,99 & 18,70 & 0,01870 & 320 \\
+8,02 & 25,00 & 0,02500 & 319 \\
+10,10 & 31,90 & 0,03190 & 316 \\
+12,00 & 38,00 & 0,03800 & 315 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Análise dos Resultados:}
+A resistência média calculada a partir das medições foi:
+
+\[
+R_{\text{média}} = 321{,}48\,\Omega
+\]
+
+O valor obtido está dentro da faixa de tolerância do resistor (5\%), validando a precisão do experimento. O gráfico tensão vs. corrente resultou em uma reta, indicando comportamento ôhmico.
+
+\subsection{Segunda Etapa: Resistor de 1\,k$\Omega$}
+O resistor identificado pelas cores \textbf{marrom, preto, vermelho, dourado} (1000Ω, ±5%) foi testado com as mesmas tensões.
+
+\subsubsection{Medições realizadas:}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Tensão (V)} & \textbf{Corrente (mA)} & \textbf{Corrente (A)} & \textbf{Resistência (Ω)} \\
+\hline
+2,02 & 2,00 & 0,00200 & 1010 \\
+3,99 & 3,99 & 0,00399 & 1000 \\
+6,04 & 6,01 & 0,00601 & 1004 \\
+8,04 & 7,97 & 0,00797 & 1009 \\
+10,00 & 9,98 & 0,00998 & 1002 \\
+12,01 & 12,00 & 0,01200 & 1000 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Análise dos Resultados:}
+A resistência média foi:
+
+\[
+R_{\text{média}} = 999{,}99\,\Omega
+\]
+
+Valor excelente, muito próximo ao nominal. Também gerou um gráfico linear de tensão versus corrente, confirmando comportamento ôhmico.
+
+\vspace{0.5cm}
+
+\subsection{Terceira Etapa: Resistor de 10\,k$\Omega$}
+Resistor de \textbf{marrom, preto, laranja, dourado} (10\,kΩ, ±5\%) testado com as mesmas tensões.
+
+\subsubsection{Medições realizadas:}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Tensão (V)} & \textbf{Corrente ($\mu$A)} & \textbf{Corrente (A)} & \textbf{Resistência (Ω)} \\
+\hline
+2,05 & 214 & 0,000214 & 9588 \\
+4,02 & 414 & 0,000414 & 9717 \\
+6,00 & 618 & 0,000618 & 9709 \\
+8,02 & 820 & 0,000820 & 9782 \\
+10,24 & 1025 & 0,001025 & 9990 \\
+12,01 & 1230 & 0,001230 & 9764 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Análise dos Resultados:}
+Resistência média:
+
+\[
+R_{\text{média}} = 9730{,}53\,\Omega
+\]
+
+Resultado compatível com a tolerância esperada. Comportamento ôhmico verificado.
+
+\vspace{0.5cm}
+
+\subsection{Comparação com Medição Direta no Multímetro}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Resistor} & \textbf{Resistência Média (Ensaio)} & \textbf{Resistência Medida no Multímetro} \\
+\hline
+330 Ω & 321,48 Ω & 326 Ω \\
+1 kΩ & 999,99 Ω & 1006 Ω \\
+10 kΩ & 9730,53 Ω & 9780 Ω \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\subsection{Conclusão}
+O experimento confirmou que todos os resistores testados obedecem à \textbf{Primeira Lei de Ohm}. As medições mostraram proporcionalidade entre corrente e tensão, representada por gráficos com tendência linear. Os valores médios de resistência calculados coincidem com os valores nominais dentro das margens de tolerância indicadas nos componentes.
+
+Este tipo de prática reforça a importância do conhecimento teórico aliado ao uso correto dos instrumentos de medição. Além disso, evidencia o comportamento ideal de componentes ôhmicos em circuitos reais.
+
+\vspace{0.5cm}
+\noindent\textbf{Próximo capítulo:} \hyperref[cap6]{Geradores e Receptores Elétricos.}

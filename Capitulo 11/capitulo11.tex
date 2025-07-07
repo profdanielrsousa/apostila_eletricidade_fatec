@@ -1,0 +1,221 @@
+% Título do capítulo
+\capitulo{Corrente Alternada e Indução Eletromagnética}\label{cap11}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+\begin{itemize}
+  \item Compreender os fundamentos da corrente alternada (CA) e a importância da forma de onda senoidal.
+  \item Entender os princípios da indução eletromagnética, com base nas Leis de Faraday e Lenz.
+  \item Visualizar a geração de tensão alternada a partir de geradores elementares.
+  \item Interpretar o conceito de defasagem entre sinais senoidais.
+  \item Calcular o valor instantâneo e o valor eficaz (RMS) de grandezas senoidais.
+  \item Aplicar conceitos de velocidade angular e conversão grau-radiano.
+\end{itemize}
+}
+
+%\secao{Geradores e Receptores Elétricos}
+%\index{seção}
+
+%----------------------------------------------------------
+
+\section{Sinais Periódicos e Corrente Alternada}
+
+Sinais periódicos são formas de onda que se repetem ao longo do tempo, como as tensões e correntes alternadas. Os principais tipos de ondas periódicas são:
+
+\begin{itemize}
+  \item \textbf{Senoidal:} forma de onda contínua e simétrica, usada na geração e distribuição de energia elétrica.
+  \item \textbf{Quadrada:} alternância abrupta entre níveis positivo e negativo; usada em inversores de frequência simples.
+  \item \textbf{Triangular:} forma linear e simétrica, gerada eletronicamente; usada em modulação PWM.
+\end{itemize}
+
+%\begin{center}
+%\includegraphics[width=0.8\textwidth]{ondas_periodicas.png}
+%\end{center}
+
+A forma de onda senoidal é predominante na rede elétrica por facilitar:
+\begin{itemize}
+  \item A geração em máquinas rotativas.
+  \item O uso eficiente de transformadores.
+  \item A transmissão com menores perdas.
+  \item A análise com ferramentas matemáticas simples (números complexos).
+\end{itemize}
+
+\section{Conceito de Corrente Alternada}
+
+A \textbf{corrente alternada} (CA) é aquela que muda de polaridade de forma periódica. A \textbf{tensão alternada} também varia continuamente no tempo. A representação matemática de uma forma de onda senoidal é:
+\[
+v(t) = V_p \cdot \sen(\omega t + \theta),
+\]
+onde:
+\begin{itemize}
+  \item \(V_p\): valor de pico da tensão,
+  \item \(\omega\): velocidade angular (\(\omega = 2\pi f\)),
+  \item \(\theta\): ângulo de fase (ou defasagem),
+  \item \(t\): tempo.
+\end{itemize}
+
+\section{Indução Eletromagnética: Leis de Faraday e Lenz}
+
+A \textbf{Lei de Faraday} afirma que uma variação no fluxo magnético através de um circuito induz uma tensão nesse circuito. Sua expressão matemática é:
+\[
+\mathcal{E} = -N \cdot \frac{d\Phi}{dt},
+\]
+onde:
+\begin{itemize}
+  \item \(\mathcal{E}\): força eletromotriz induzida (FEM),
+  \item \(N\): número de espiras da bobina,
+  \item \(\Phi\): fluxo magnético (em Weber).
+\end{itemize}
+
+A \textbf{Lei de Lenz} complementa a anterior, determinando que a direção da corrente induzida será tal que o campo magnético resultante se opõe à variação do fluxo que a gerou.
+
+\subsection{Condições para a Geração de Corrente Induzida}
+\begin{itemize}
+  \item Um condutor,
+  \item Um campo magnético variável,
+  \item Movimento relativo entre campo e condutor.
+\end{itemize}
+
+\subsection{Regra da Mão Direita}
+\begin{itemize}
+  \item Polegar: direção do movimento do condutor,
+  \item Indicador: direção do campo magnético,
+  \item Médio: direção da corrente induzida.
+\end{itemize}
+
+
+\section{Geração Elementar de Corrente Alternada}
+
+Um gerador elementar consiste em:
+\begin{itemize}
+  \item Um ímã permanente com polos norte e sul.
+  \item Uma bobina girando em torno de um eixo entre os polos.
+  \item Um sistema de escovas e anéis coletores para extrair a tensão.
+\end{itemize}
+
+À medida que a bobina gira, o ângulo entre suas espiras e as linhas do campo magnético muda. Isso provoca uma variação no fluxo magnético e, conforme a Lei de Faraday, gera uma tensão alternada nos terminais.
+
+\subsection{Análise por Intervalos}
+
+\begin{description}
+  \item[\(t_1\):] Bobina paralela às linhas de campo (\(\theta = 0^\circ\) ou \(180^\circ\)); \(\Phi = 0\); \(\mathcal{E} = 0\).
+  \item[\(t_3\):] Bobina perpendicular ao campo (\(\theta = 90^\circ\)); \(\Phi\) máximo; \(\mathcal{E}_{\text{máx}}\).
+  \item[\(t_5\):] Nova inversão de sentido; semiciclo negativo da forma de onda.
+\end{description}
+
+O gráfico da tensão alternada resultante é senoidal e se repete a cada volta da espira.
+
+\section{Forma de Onda Senoidal}
+
+\subsection{Características}
+
+\begin{itemize}
+  \item \textbf{Valor de pico (\(V_p\))}: valor máximo da tensão ou corrente.
+  \item \textbf{Valor de pico a pico (\(V_{pp}\))}: diferença entre pico positivo e negativo.
+  \item \textbf{Período (\(T\))}: tempo de uma repetição completa.
+  \item \textbf{Frequência (\(f\))}: número de ciclos por segundo (\(f = \frac{1}{T}\)).
+  \item \textbf{Velocidade angular (\(\omega\))}: \(\omega = 2\pi f\) (rad/s).
+\end{itemize}
+
+\subsection{Conversão Grau-Radiano}
+\[
+1\ \text{rad} = \frac{180^\circ}{\pi} \approx 57,3^\circ, \quad
+x\ \text{graus} = \frac{\pi}{180} \cdot x\ \text{rad}
+\]
+
+\section{Valor Eficaz ou RMS}
+
+\subsection{Definição}
+O \textbf{valor eficaz (ou RMS)} de uma grandeza alternada é o valor contínuo equivalente que produziria o mesmo efeito térmico (potência) em uma resistência.
+
+\subsection{Para formas senoidais puras:}
+\[
+V_{\text{eficaz}} = \frac{V_p}{\sqrt{2}} \approx 0{,}707\,V_p
+\quad\text{e}\quad
+I_{\text{eficaz}} = \frac{I_p}{\sqrt{2}} \approx 0{,}707\,I_p
+\]
+
+\subsection{Instrumentos True RMS}
+Multímetros \textit{True RMS} calculam corretamente o valor eficaz mesmo para ondas não senoidais. Instrumentos mais simples assumem uma forma senoidal e aplicam a divisão por \(\sqrt{2}\).
+
+\section{Defasagem Angular}
+
+\subsection{Conceito}
+A defasagem representa o deslocamento angular entre duas formas de onda senoidais de mesma frequência. Pode ser:
+\begin{itemize}
+  \item \textbf{Positiva}: a onda está \textit{adiantada}.
+  \item \textbf{Negativa}: a onda está \textit{atrasada}.
+\end{itemize}
+
+\subsection{Exemplo com Corrida}
+Imagine três corredores na mesma pista circular:
+\begin{itemize}
+  \item Corredor A: parte da origem.
+  \item Corredor B: adiantado 90º (forma de onda adiantada).
+  \item Corredor C: atrasado 90º (forma de onda atrasada).
+\end{itemize}
+
+\subsection{Equações com Defasagem}
+
+\begin{itemize}
+  \item \(v(t) = V_p \cdot \sen(\omega t + \theta_v)\)
+  \item \(i(t) = I_p \cdot \sen(\omega t + \theta_i)\)
+\end{itemize}
+
+Para comparação, a defasagem relativa é \(\theta_i - \theta_v\). Atenção: unifique as unidades (grau ou rad) antes de calcular.
+
+\section{Valor Instantâneo da Grandeza}
+
+O valor instantâneo de uma tensão ou corrente senoidal pode ser calculado por:
+\[
+v(t) = V_p \cdot \sen(\omega t + \theta)
+\quad\text{e}\quad
+i(t) = I_p \cdot \sen(\omega t + \theta)
+\]
+
+\subsection{Unidades}
+\begin{itemize}
+  \item \(V_p, I_p\): valores de pico (V, A)
+  \item \(t\): tempo (s)
+  \item \(\omega\): rad/s
+  \item \(\theta\): defasagem (graus ou radianos)
+\end{itemize}
+
+\subsection{Conversão}
+Antes de resolver, converta todos os ângulos para a mesma unidade e configure a calculadora (graus ou radianos).
+
+\section{Exemplo Resolvido}
+
+\textbf{Dados:}
+\begin{itemize}
+  \item \(V_p = 200\,\text{V}\)
+  \item \(f = 60\,\text{Hz}\)
+  \item \(\theta = 45^\circ = 0{,}7854\,\text{rad}\)
+  \item \(t = 0{,}1\,\text{s}\)
+\end{itemize}
+
+\textbf{Cálculo:}
+\[
+\omega = 2\pi f = 377\,\text{rad/s}
+\]
+\[
+v(t) = 200 \cdot \sen(377 \cdot 0{,}1 + 0{,}7854)
+\]
+\[
+v(t) \approx 200 \cdot \sen(38{,}4854) \approx 141{,}4\,\text{V}
+\]
+
+---
+
+\section{Resumo}
+\begin{itemize}
+  \item Formas de onda senoidais são predominantes por sua eficiência e facilidade de análise.
+  \item A Lei de Faraday explica a geração de tensão por variação de fluxo magnético.
+  \item A defasagem entre ondas permite identificar atrasos ou adiantamentos.
+  \item O valor eficaz é mais representativo que o valor instantâneo.
+\end{itemize}

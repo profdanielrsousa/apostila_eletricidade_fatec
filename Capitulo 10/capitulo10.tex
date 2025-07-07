@@ -1,0 +1,143 @@
+% Título do capítulo
+\capitulo{Números Complexos para Análise de Circuitos em Corrente Alternada}\label{cap10}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+\begin{itemize}
+  \item Revisar os principais conjuntos numéricos estudados no ensino médio.
+  \item Introduzir o conjunto dos números complexos e suas representações.
+  \item Demonstrar a conversão entre forma retangular e forma polar.
+  \item Aplicar operações (adição, subtração, multiplicação, divisão e potência) com números complexos.
+  \item Apresentar propriedades úteis (conjugado, inverso, relações com \(j\)).
+  \item Preparar o ferramental matemático necessário para a análise de circuitos senoidais em CA.
+\end{itemize}
+}
+
+%\secao{Geradores e Receptores Elétricos}
+%\index{seção}
+
+%----------------------------------------------------------
+\section{Revisão dos Conjuntos Numéricos}
+\begin{description}
+  \item[Naturais \((\mathbb{N})\):] \(0,1,2,\dots\)
+  \item[Inteiros \((\mathbb{Z})\):] \(\dots,-2,-1,0,1,2,\dots\)
+  \item[Racionais \((\mathbb{Q})\):] \(\dfrac{p}{q}\), \(p,q\in\mathbb{Z},\; q\neq0\)
+  \item[Irracionais:] números sem representação fracionária finita (ex.: \(\pi\), \(e\))
+  \item[Reais \((\mathbb{R})\):] \(\mathbb{Q}\cup(\text{irracionais})\)
+\end{description}
+
+Considere a equação \(x^{2}+1=0\). Não há solução real, pois exigiria \(\sqrt{-1}\). Esse impasse motiva o \textbf{conjunto dos números complexos \((\mathbb{C})\)}, onde definimos
+\[
+j=\sqrt{-1}, \qquad j^{2}=-1.
+\]
+
+%----------------------------------------------------------
+\section{Forma Retangular}
+Um número complexo é escrito como
+\[
+C = x + j\,y,
+\]
+onde \(x\in\mathbb{R}\) é a \textbf{parte real} e \(y\in\mathbb{R}\) é a \textbf{parte imaginária}. No plano complexo (\(x\)-real, \(y\)-imaginário), \(C\) corresponde ao ponto \((x,y)\).
+
+%----------------------------------------------------------
+\section{Forma Polar}
+Pela geometria:
+\[
+|C| = Z = \sqrt{x^{2}+y^{2}}, \qquad
+\theta = \arctan\!\bigl(\tfrac{y}{x}\bigr).
+\]
+Escrevemos então
+\[
+C = Z \angle \theta
+\quad\text{ou}\quad
+C = Z(\cos\theta + j\sin\theta).
+\]
+
+%----------------------------------------------------------
+\section{Conversões}
+\begin{minipage}{0.49\textwidth}
+\subsection{Retangular \(\rightarrow\) Polar}
+\[
+\boxed{\;
+\begin{aligned}
+Z &= \sqrt{x^{2}+y^{2}},\\
+\theta &= \arctan\!\bigl(\tfrac{y}{x}\bigr).
+\end{aligned}}
+\]
+\end{minipage}\hfill
+\begin{minipage}{0.49\textwidth}
+\subsection{Polar \(\rightarrow\) Retangular}
+\[
+\boxed{\;
+\begin{aligned}
+x &= Z\cos\theta,\\
+y &= Z\sin\theta.
+\end{aligned}}
+\]
+\end{minipage}
+
+%----------------------------------------------------------
+\section{Propriedades Fundamentais}
+\[
+j^2=-1, \qquad \frac{1}{j} = -j.
+\]
+
+\paragraph{Conjugado:}
+\[
+C^{\ast}=x-j\,y = Z\angle(-\theta).
+\]
+
+\paragraph{Inverso:}
+\[
+C^{-1} = \frac{1}{C} = \frac{x-j\,y}{x^{2}+y^{2}} = \frac{1}{Z}\angle(-\theta).
+\]
+
+%----------------------------------------------------------
+\section{Operações com Números Complexos}
+
+\subsection{Adição e Subtração (forma retangular)}
+\[
+C_{1}\pm C_{2} = (x_{1}\pm x_{2}) + j\,(y_{1}\pm y_{2}).
+\]
+
+\subsection{Multiplicação (forma polar)}
+\[
+C_{1} C_{2} = Z_{1}Z_{2}\,\angle(\theta_{1}+\theta_{2}).
+\]
+
+\subsection{Divisão (forma polar)}
+\[
+\frac{C_{1}}{C_{2}} = \frac{Z_{1}}{Z_{2}}\,\angle(\theta_{1}-\theta_{2}).
+\]
+
+\subsection{Potenciação (fórmula de De Moivre)}
+\[
+C^{\,n} = Z^{n}\,\angle(n\theta).
+\]
+
+\paragraph{Produto com o Conjugado:}
+\(C\cdot C^{\ast}=x^{2}+y^{2}=Z^{2}\) (sempre real e \(\ge 0\)).
+
+%----------------------------------------------------------
+\section{Importância em Circuitos CA}
+Para tensões e correntes senoidais, a representação fasorial (complexa) permite aplicar \(\,V=ZI\) e as Leis de Kirchhoff substituindo derivadas e integrais por simples produtos e somas de fasores. Assim, resistores, capacitores e indutores assumem impedâncias:
+\[
+Z_{R}=R,\quad
+Z_{L}=j\omega L,\quad
+Z_{C}=\frac{1}{j\omega C}.
+\]
+Nos próximos capítulos utilizaremos este ferramental para analisar circuitos em regime permanente senoidal.
+
+%----------------------------------------------------------
+\section{Exercícios Propostos}
+\begin{enumerate}
+  \item Converta \(C=3-4j\) para a forma polar.
+  \item Some \(C_{1}=5\angle30^{\circ}\) e \(C_{2}=10\angle-45^{\circ}\). Dê a resposta em forma retangular.
+  \item Calcule \(\dfrac{C_{1}}{C_{2}}\) para \(C_{1}=8+6j\) e \(C_{2}=2-2j\).
+  \item Mostre que \(Z_{C}=\dfrac{1}{j\omega C}\) equivale a \(Z_{C}=\frac{1}{\omega C}\angle-90^{\circ}\).
+\end{enumerate}

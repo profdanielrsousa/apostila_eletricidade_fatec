@@ -1,0 +1,272 @@
+% Título do capítulo
+\capitulo{Exercícios sobre Associação de Resistores}\label{cap4}
+
+\mais{
+
+\begin{center}
+    \Large \textbf{Objetivo}
+\end{center}
+
+Ao final deste capítulo, espera-se que o estudante seja capaz de:
+
+\begin{itemize}
+    \item Resolver exercícios aplicados sobre associação de resistores em série e paralelo.
+    \item Aplicar corretamente fórmulas para cálculo da resistência equivalente.
+    \item Realizar conversão entre unidades de resistência (ohm, quilohm, megaohm).
+    \item Identificar visualmente associações em série, paralelo e mista, independentemente da orientação do desenho.
+    \item Utilizar estratégias passo a passo para resolver associações mistas.
+    \item Verificar a coerência dos resultados com base em princípios teóricos.
+    \item Reforçar os conceitos estudados nos capítulos anteriores por meio da prática.
+\end{itemize}
+}
+
+\secao{Exercícios sobre Associação de Resistores}
+\index{seção}
+
+\subsection{Revisão: Associação em Série}
+Na associação em série, a \textbf{resistência equivalente} é a soma direta dos resistores ligados em sequência:
+
+\[
+R_{eq} = R_1 + R_2 + R_3 + \dots + R_n
+\]
+
+\textbf{Importante:} Todos os resistores devem estar na mesma unidade para que a soma seja válida.
+
+\subsubsection{Exemplo 1}
+Dois resistores de $100\,\Omega$ em série entre os pontos A e B:
+
+\[
+R_{eq} = 100 + 100 = 200\,\Omega
+\]
+
+\subsubsection{Exemplo 2}
+Um resistor de $50\,\Omega$ e outro de $145\,\Omega$:
+
+\[
+R_{eq} = 50 + 145 = 195\,\Omega
+\]
+
+\subsubsection{Exemplo 3: Conversão de Unidades}
+Um resistor de $1\,\text{k}\Omega$ e outro de $220\,\Omega$:
+
+\[
+1\,\text{k}\Omega = 1000\,\Omega
+\quad \Rightarrow \quad
+R_{eq} = 1000 + 220 = 1220\,\Omega
+\]
+
+\subsubsection{Exemplo 4}
+$2{,}5\,\text{k}\Omega$ e $560\,\Omega$:
+
+\[
+2{,}5\,\text{k}\Omega = 2500\,\Omega
+\quad \Rightarrow \quad
+R_{eq} = 2500 + 560 = 3060\,\Omega
+\]
+
+\subsubsection{Exemplo 5}
+Resistores: $100\,\text{k}\Omega$, $550\,\Omega$ e $6000\,\Omega$:
+
+\[
+100\,\text{k}\Omega = 100000\,\Omega
+\quad \Rightarrow \quad
+R_{eq} = 100000 + 550 + 6000 = 106550\,\Omega
+\]
+
+\subsubsection{Exemplo 6: Megaohms e kilohms}
+Resistores: $1\,\text{M}\Omega$, $620\,\text{k}\Omega$, $1000\,\Omega$:
+
+\[
+1\,\text{M}\Omega = 1000000\,\Omega,\quad
+620\,\text{k}\Omega = 620000\,\Omega
+\quad \Rightarrow \quad
+R_{eq} = 1000000 + 620000 + 1000 = 1621000\,\Omega
+\]
+
+\subsubsection{Nota:}
+A ordem e disposição dos resistores (horizontal, vertical, zigue-zague) não altera a configuração elétrica. O importante é observar como os terminais estão conectados em sequência.
+
+\subsubsection{Exemplo 7}
+$72\,\text{k}\Omega$ + $330\,\text{k}\Omega$:
+
+\[
+R_{eq} = 72 + 330 = 402\,\text{k}\Omega
+\]
+
+Ou, em ohms:
+
+\[
+72000 + 330000 = 402000\,\Omega
+\]
+
+\subsubsection{Exemplo 8: Resistores em zigue-zague}
+$30\,\text{k}\Omega$, $20\,\text{k}\Omega$, $10\,\text{k}\Omega$:
+
+\[
+R_{eq} = 30 + 20 + 10 = 60\,\text{k}\Omega = 60000\,\Omega
+\]
+
+\subsection{Revisão: Associação em Paralelo}
+Na associação em paralelo, a \textbf{tensão elétrica é a mesma} em todos os resistores, e a \textbf{corrente se divide} de acordo com o valor da resistência.
+
+A resistência equivalente é dada pela fórmula geral:
+
+\[
+\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}
+\]
+
+\textbf{Importante:} O resultado da resistência equivalente será sempre \textbf{menor que o menor resistor da associação}.
+
+\subsubsection{Casos Particulares}
+\begin{itemize}
+    \item \textbf{Resistores iguais:}
+    \[
+    R_{eq} = \frac{R}{n}
+    \]
+
+    \item \textbf{Dois resistores apenas:}
+    \[
+    R_{eq} = \frac{R_1 \cdot R_2}{R_1 + R_2}
+    \]
+\end{itemize}
+
+\subsubsection{Exemplo 1: Dois resistores diferentes}
+$R_1 = 100\,\Omega$, $R_2 = 50\,\Omega$
+
+\[
+\frac{1}{R_{eq}} = \frac{1}{100} + \frac{1}{50} = \frac{3}{100}
+\Rightarrow
+R_{eq} = \frac{100}{3} \approx 33{,}33\,\Omega
+\]
+
+\textit{Verificação:} $33{,}33\,\Omega < 50\,\Omega$ ✅
+
+\subsubsection{Exemplo 2: Mesmo problema usando produto pela soma}
+\[
+R_{eq} = \frac{100 \cdot 50}{100 + 50} = \frac{5000}{150} = 33{,}33\,\Omega
+\]
+
+\subsubsection{Exemplo 3: Resistores de 25\,\Omega e 30\,\Omega}
+\[
+\frac{1}{R_{eq}} = \frac{1}{25} + \frac{1}{30}
+= \frac{11}{150}
+\Rightarrow R_{eq} \approx 13{,}63\,\Omega
+\]
+
+\textit{Verificação:} $13{,}63\,\Omega < 25\,\Omega$
+
+\subsubsection{Exemplo 4: Três resistores distintos}
+$R_1 = 30\,\Omega$, $R_2 = 60\,\Omega$, $R_3 = 90\,\Omega$
+
+\[
+\frac{1}{R_{eq}} = \frac{1}{30} + \frac{1}{60} + \frac{1}{90}
+= \frac{6}{45} = \frac{2}{15}
+\Rightarrow R_{eq} = \frac{15}{2} = 7{,}5\,\Omega
+\]
+
+\textit{Verificação:} $R_{eq} < 30\,\Omega$
+
+\subsubsection{Exemplo 5: Três resistores iguais}
+Três resistores de $30\,\Omega$:
+
+\[
+R_{eq} = \frac{30}{3} = 10\,\Omega
+\]
+
+Ou usando a fórmula geral:
+
+\[
+\frac{1}{R_{eq}} = \frac{1}{30} + \frac{1}{30} + \frac{1}{30}
+= \frac{3}{30} = \frac{1}{10}
+\Rightarrow R_{eq} = 10\,\Omega
+\]
+
+\subsubsection{Exemplo 6: Diversos valores}
+$R_1 = 10\,\text{k}\Omega$, $R_2 = 300\,\Omega$, $R_3 = 1\,\text{k}\Omega$, $R_4 = 500\,\Omega$
+
+\[
+\frac{1}{R_{eq}} = \frac{1}{10000} + \frac{1}{300} + \frac{1}{1000} + \frac{1}{500}
+\Rightarrow R_{eq} \approx 154{,}4\,\Omega
+\]
+
+\textit{Verificação:} $154{,}4\,\Omega < 300\,\Omega$ ✅
+
+\subsection{Associação Mista de Resistores}
+Associação mista ocorre quando resistores estão conectados em partes em série e outras em paralelo no mesmo circuito.
+
+\subsubsection{Estratégia de Resolução}
+\begin{enumerate}
+    \item Identificar trechos que estão em paralelo e calcular sua resistência equivalente.
+    \item Substituir os trechos calculados e verificar se restaram resistores em série.
+    \item Repetir o processo até reduzir o circuito a uma única resistência equivalente entre os pontos A e B.
+\end{enumerate}
+
+\subsubsection{Exemplo 1: Paralelo seguido de série}
+Resistores:
+\[
+\text{Paralelo: } R_1 = 100\,\Omega, R_2 = 200\,\Omega \quad\text{em paralelo}
+\quad\text{em série com } R_3 = 300\,\Omega
+\]
+
+\begin{itemize}
+    \item Primeiro, calcule o paralelo:
+    \[
+    \frac{1}{R_{12}} = \frac{1}{100} + \frac{1}{200} = \frac{3}{200} \Rightarrow R_{12} = \frac{200}{3} \approx 66{,}67\,\Omega
+    \]
+    \item Em seguida, calcule a série:
+    \[
+    R_{eq} = R_{12} + R_3 = 66{,}67 + 300 = 366{,}67\,\Omega
+    \]
+\end{itemize}
+
+\subsubsection{Exemplo 2: Série seguida de paralelo}
+Resistores:
+\[
+\text{Série: } R_1 = 300\,\Omega,\ R_2 = 400\,\Omega
+\quad\text{em paralelo com } R_3 = 500\,\Omega
+\]
+
+\begin{itemize}
+    \item Série:
+    \[
+    R_{12} = 300 + 400 = 700\,\Omega
+    \]
+    \item Paralelo com $R_3$:
+    \[
+    \frac{1}{R_{eq}} = \frac{1}{700} + \frac{1}{500} \Rightarrow R_{eq} \approx 291{,}67\,\Omega
+    \]
+\end{itemize}
+
+\subsubsection{Exemplo 3: Dois paralelos seguidos de série}
+\[
+\text{Primeiro paralelo: } 1\,\text{k}\Omega\ \| \ 20\,\text{k}\Omega
+\quad\text{Segundo paralelo: } 10\,\text{k}\Omega\ \| \ 2\,\text{k}\Omega
+\]
+
+\begin{itemize}
+    \item Primeiro:
+    \[
+    \frac{1}{R_1} = \frac{1}{1000} + \frac{1}{20000} \Rightarrow R_1 \approx 952{,}38\,\Omega
+    \]
+    \item Segundo:
+    \[
+    \frac{1}{R_2} = \frac{1}{10000} + \frac{1}{2000} \Rightarrow R_2 \approx 1666{,}67\,\Omega
+    \]
+    \item Série final:
+    \[
+    R_{eq} = R_1 + R_2 = 952{,}38 + 1666{,}67 = 2619{,}05\,\Omega
+    \]
+\end{itemize}
+
+\subsection{Dicas Finais e Encerramento}
+\begin{itemize}
+    \item Sempre converta todas as resistências para a mesma unidade antes de somar.
+    \item Em série: soma direta das resistências.
+    \item Em paralelo: o resultado é sempre menor que o menor resistor.
+    \item Identifique visualmente os caminhos e não se prenda à forma do desenho (horizontal, vertical, zigue-zague).
+    \item Use a fórmula do produto pela soma apenas para dois resistores.
+    \item Para mistos, resolva por etapas: paralelo → substitui → soma em série.
+\end{itemize}
+
+\vspace{0.5cm}
+\noindent\textbf{Próximo capítulo:} \hyperref[cap5]{Verificação Experimental da Lei de Ohm.}
